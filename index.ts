@@ -1,3 +1,4 @@
-declare function require(id: string);
+/// <reference path="node.d.ts" />
+/// <reference path="custom-ol.d.ts" />
 
-export default require('ol-build');
+export default require('./ol-build');
