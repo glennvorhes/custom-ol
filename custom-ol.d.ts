@@ -5398,6 +5398,6 @@ declare namespace ol {
     interface TransformFunction { (input: Array<number>, output?: Array<number>, dimension?: number): Array<number> }
 }
 
-declare module "openlayers" {
+declare module "custom-ol" {
     export = ol;
 }
