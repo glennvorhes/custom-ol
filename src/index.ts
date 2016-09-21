@@ -1,2 +1,2 @@
 declare function require(id: string);
-export const ol = require('../ol/ol-build');
+export default require('../ol/ol-build');
