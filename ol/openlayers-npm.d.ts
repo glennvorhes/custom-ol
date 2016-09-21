@@ -3,8 +3,8 @@
 // Definitions by: Wouter Goedhart <https://github.com/woutergd>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-declare namespace olx {
-    interface StaticImageOptions {
+export declare namespace olx {
+    export interface StaticImageOptions {
 
         /** Attributions */
         attributions?: Array<ol.Attribution>
@@ -31,7 +31,7 @@ declare namespace olx {
         url: string;
     }
 
-    interface ZoomToExtentOptions {
+    export interface ZoomToExtentOptions {
         /*** Class name. Default is ol-zoom-extent.*/
         className?: string;
 
@@ -48,7 +48,7 @@ declare namespace olx {
         extent: ol.Extent;
     }
 
-    interface OverviewMapOptions {
+    export interface OverviewMapOptions {
         /*** Whether the control should start collapsed or not (expanded). Default to true.*/
         collapsed?: boolean;
         /*** Text label to use for the expanded overviewmap button. Default is «. Instead of text, also a Node (e.g. a span element) can be used.*/
@@ -69,7 +69,7 @@ declare namespace olx {
         view?: ol.View;
     }
 
-    interface RotateOptions {
+    export interface RotateOptions {
         /*** CSS class name. Default is ol-rotate.*/
         className?: string;
         /*** Text label to use for the rotate button. Default is ⇧. Instead of text, also a Node (e.g. a span element) can be used.*/
@@ -88,13 +88,13 @@ declare namespace olx {
         target?: Element;
     }
 
-    interface AttributionOptions {
+    export interface AttributionOptions {
 
         /** HTML markup for this attribution. */
         html: string;
     }
 
-    interface DeviceOrientationOptions {
+    export interface DeviceOrientationOptions {
 
         /**
          * Start tracking. Default is false.
@@ -102,7 +102,7 @@ declare namespace olx {
         tracking?: boolean;
     }
 
-    interface FrameState {
+    export interface FrameState {
 
         /**
          *
@@ -120,7 +120,7 @@ declare namespace olx {
         viewState: olx.ViewState;
     }
 
-    interface FeatureOverlayOptions {
+    export interface FeatureOverlayOptions {
 
         /**
          * Features
@@ -138,7 +138,7 @@ declare namespace olx {
         style: ol.style.Style | Array<ol.style.Style>;
     }
 
-    interface GeolocationOptions {
+    export interface GeolocationOptions {
 
         /**
          * Start Tracking. Default is false.
@@ -156,7 +156,7 @@ declare namespace olx {
         projection?: ol.proj.ProjectionLike | ol.proj.Projection;
     }
 
-    interface GraticuleOptions {
+    export interface GraticuleOptions {
 
         /** Reference to an ol.Map object. */
         map?: ol.Map;
@@ -171,7 +171,7 @@ declare namespace olx {
         targetSize?: number;
     }
 
-    interface BaseWMSOptions {
+    export interface BaseWMSOptions {
 
         /** Attributions. */
         attributions?: Array<ol.Attribution>;
@@ -198,7 +198,7 @@ declare namespace olx {
         projection?: ol.proj.ProjectionLike;
     }
 
-    interface ImageWMSOptions extends BaseWMSOptions {
+    export interface ImageWMSOptions extends BaseWMSOptions {
 
         /** experimental Optional function to load an image given a URL. */
         imageLoadFunction?: ol.ImageLoadFunctionType;
@@ -210,7 +210,7 @@ declare namespace olx {
         resolutions?: Array<number>;
     }
 
-    interface TileWMSOptions {
+    export interface TileWMSOptions {
 
         attributions?: Array<ol.Attribution>;
 
@@ -251,7 +251,7 @@ declare namespace olx {
         /** experimental Whether to wrap the world horizontally. When set to false, only one world will be rendered. When true, tiles will be requested for one world only, but they will be wrapped horizontally to render multiple worlds. The default is true. */
         wrapX?: boolean;
     }
-    interface OSMOptions {
+    export interface OSMOptions {
         /** Attributions */
         attributions?: ol.AttributionLike;
         /** Cache size. Default is 2048. */
@@ -278,7 +278,7 @@ declare namespace olx {
     /**
      * Object literal with config options for the map logo.
      */
-    interface LogoOptions {
+    export interface LogoOptions {
 		/**
 		* Link url for the logo. Will be followed when the logo is clicked.
 		*/
@@ -291,7 +291,7 @@ declare namespace olx {
 
     }
 
-    interface MapOptions {
+    export interface MapOptions {
 
         /** Controls initially added to the map. If not specified, ol.control.defaults() is used. */
         controls?: any;
@@ -330,7 +330,7 @@ declare namespace olx {
         view?: ViewOptions;
     }
 
-    interface OverlayOptions {
+    export interface OverlayOptions {
 
         /**
          * The overlay element.
@@ -378,7 +378,7 @@ declare namespace olx {
         autoPanMargin?: number;
     }
 
-    interface ViewOptions {
+    export interface ViewOptions {
 
         /** The initial center for the view. The coordinate system for the center is specified with the projection option. Default is undefined, and layer sources will not be fetched if this is not set. */
         center?: ol.Coordinate;
@@ -423,7 +423,7 @@ declare namespace olx {
         zoomFactor?: number;
     }
 
-    interface ViewState {
+    export interface ViewState {
 
         /**
          *
@@ -446,7 +446,7 @@ declare namespace olx {
         rotation: number;
     }
 
-    interface Projection {
+    export interface Projection {
         /**
          * The SRS identifier code, e.g. EPSG:4326.
          */
@@ -485,9 +485,9 @@ declare namespace olx {
         getPointResolution?: (resolution: number, coordinate: ol.Coordinate) => number;
     }
 
-    namespace animation {
+    export namespace animation {
 
-        interface BounceOptions {
+        export interface BounceOptions {
 
             /**
              * The resolution to start the bounce from, typically map.getView().getResolution().
@@ -510,7 +510,7 @@ declare namespace olx {
             easing?: (t: number) => number;
         }
 
-        interface PanOptions {
+        export interface PanOptions {
 
             /**
              * The resolution to start the bounce from, typically map.getView().getResolution().
@@ -533,7 +533,7 @@ declare namespace olx {
             easing?: (t: number) => number;
         }
 
-        interface RotateOptions {
+        export interface RotateOptions {
 
             /**
              * The rotation value (in radians) to begin rotating from, typically map.getView().getRotation(). If undefined then 0 is assumed.
@@ -561,7 +561,7 @@ declare namespace olx {
             easing?: (t: number) => number
         }
 
-        interface ZoomOptions {
+        export interface ZoomOptions {
 
             /**
              * The resolution to begin zooming from, typically map.getView().getResolution().
@@ -585,9 +585,9 @@ declare namespace olx {
         }
     }
 
-    namespace control {
+    export namespace control {
 
-        interface DefaultsOptions {
+        export interface DefaultsOptions {
 
             /**
              * Attribution. Default is true.
@@ -624,8 +624,8 @@ declare namespace olx {
         }
     }
 
-    namespace interaction {
-        interface DefaultsOptions {
+    export namespace interaction {
+        export interface DefaultsOptions {
             /*** Whether Alt-Shift-drag rotate is desired. Default is true.*/
             altShiftDragRotate?: boolean;
             /*** Whether double click zoom is desired. Default is true.*/
@@ -647,7 +647,7 @@ declare namespace olx {
             /*** Zoom duration*/
             zoomDuration?: number;
         }
-        interface InteractionOptions {
+        export interface InteractionOptions {
             /**
              * Method called by the map to notify the interaction that a browser event was dispatched to the map.
              * The function may return false to prevent the propagation of the event to other interactions in
@@ -655,7 +655,7 @@ declare namespace olx {
              */
             handleEvent: Function;
         }
-        interface ModifyOptions {
+        export interface ModifyOptions {
             /**
              * A function that takes an ol.MapBrowserEvent and returns a boolean to indicate whether that event will
              * be considered to add or move a vertex to the sketch. Default is ol.events.condition.primaryAction.
@@ -676,7 +676,7 @@ declare namespace olx {
             /*** Wrap the world horizontally on the sketch overlay. Default is false.*/
             wrapX?: boolean;
         }
-        interface DragBoxOptions {
+        export interface DragBoxOptions {
             /*** CSS class name for styling the box. The default is ol-dragbox.*/
             className?: string;
             /**
@@ -687,7 +687,7 @@ declare namespace olx {
             /*** A function that takes a ol.MapBrowserEvent and two ol.Pixels to indicate whether a boxend event should be fired.*/
             boxEndCondition?: ol.interaction.DragBoxEndConditionType;
         }
-        interface DrawOptions {
+        export interface DrawOptions {
             /**
              * The maximum distance in pixels between "down" and "up" for a "up" event to be considered a "click" event and actually
              * add a point/vertex to the geometry being drawn. Default is 6 pixels. That value was chosen for the draw interaction
@@ -751,7 +751,7 @@ declare namespace olx {
              */
             wrapX?: boolean;
         }
-        interface DoubleClickZoomOptions {
+        export interface DoubleClickZoomOptions {
             /**
              * Animation duration in milliseconds. Default is 250.
              */
@@ -761,7 +761,7 @@ declare namespace olx {
              */
             delta?: number;
         }
-        interface DragAndDropOptions {
+        export interface DragAndDropOptions {
             /**
              * Format constructors.
              */
@@ -775,7 +775,7 @@ declare namespace olx {
              */
             target?: Element;
         }
-        interface DragPanOptions {
+        export interface DragPanOptions {
             /**
              * A function that takes an ol.MapBrowserEvent and returns a boolean to indicate whether that event should be handled.
              * Default is ol.events.condition.noModifierKeys.
@@ -786,7 +786,7 @@ declare namespace olx {
              */
             kinetic?: ol.Kinetic;
         }
-        interface DragRotateOptions {
+        export interface DragRotateOptions {
             /**
              * A function that takes an ol.MapBrowserEvent and returns a boolean to indicate whether that event should be handled.
              * Default is ol.events.condition.altShiftKeysOnly.
@@ -797,7 +797,7 @@ declare namespace olx {
              */
             duration?: number;
         }
-        interface DragRotateAndZoomOptions {
+        export interface DragRotateAndZoomOptions {
             /**
              * A function that takes an ol.MapBrowserEvent and returns a boolean to indicate whether that event should be handled.
              * Default is ol.events.condition.shiftKeyOnly.
@@ -808,7 +808,7 @@ declare namespace olx {
              */
             duration?: number;
         }
-        interface DragZoomOptions {
+        export interface DragZoomOptions {
             /**
              * CSS class name for styling the box. The default is ol-dragzoom.
              */
@@ -827,7 +827,7 @@ declare namespace olx {
              */
             out?: boolean;
         }
-        interface KeyboardPanOptions {
+        export interface KeyboardPanOptions {
             /**
              * A function that takes an ol.MapBrowserEvent and returns a boolean to indicate whether that event should be handled.
              * Default is ol.events.condition.noModifierKeys and ol.events.condition.targetNotEditable.
@@ -842,7 +842,7 @@ declare namespace olx {
              */
             pixelDelta?: number;
         }
-        interface KeyboardZoomOptions {
+        export interface KeyboardZoomOptions {
             /**
              * Animation duration in milliseconds. Default is 100.
              */
@@ -857,7 +857,7 @@ declare namespace olx {
              */
             delta?: number;
         }
-        interface MouseWheelZoomOptions {
+        export interface MouseWheelZoomOptions {
             /**
              * Animation duration in milliseconds. Default is 250.
              */
@@ -868,7 +868,7 @@ declare namespace olx {
              */
             useAnchor?: boolean;
         }
-        interface PinchRotateOptions {
+        export interface PinchRotateOptions {
             /**
              * The duration of the animation in milliseconds. Default is 250.
              */
@@ -878,13 +878,13 @@ declare namespace olx {
              */
             threshold?: number;
         }
-        interface PinchZoomOptions {
+        export interface PinchZoomOptions {
             /**
              * Animation duration in milliseconds. Default is 400.
              */
             duration?: number;
         }
-        interface PointerOptions {
+        export interface PointerOptions {
             /**
              * Function handling "down" events. If the function returns true then a drag sequence is started.
              */
@@ -908,7 +908,7 @@ declare namespace olx {
              */
             handleUpEvent?: Function;
         }
-        interface SnapOptions {
+        export interface SnapOptions {
             /**
              * Snap to these features. Either this option or source should be provided.
              */
@@ -930,7 +930,7 @@ declare namespace olx {
              */
             source?: ol.source.Vector;
         }
-        interface SelectOptions {
+        export interface SelectOptions {
             /**
              * A function that takes an ol.MapBrowserEvent and returns a boolean to indicate whether that event should be handled.
              * By default, this is ol.events.condition.never.
@@ -989,9 +989,9 @@ declare namespace olx {
         }
     }
 
-    namespace layer {
+    export namespace layer {
 
-        interface BaseOptions {
+        export interface BaseOptions {
             /**
              * Opacity (0, 1). Default is 1.
              */
@@ -1019,7 +1019,7 @@ declare namespace olx {
             maxResolution?: number;
         }
 
-        interface GroupOptions extends BaseOptions {
+        export interface GroupOptions extends BaseOptions {
 
             /**
              * Child layers
@@ -1027,7 +1027,7 @@ declare namespace olx {
             layers?: Array<ol.layer.Base> | ol.Collection<ol.layer.Base>;
         }
 
-        interface HeatmapOptions extends VectorOptions {
+        export interface HeatmapOptions extends VectorOptions {
 
             /**
              * The color gradient of the heatmap, specified as an array of CSS color strings. Default is ['#00f', '#0ff', '#0f0', '#ff0', '#f00'].
@@ -1050,10 +1050,10 @@ declare namespace olx {
             shadow?: number;
         }
 
-        interface ImageOptions extends LayerOptions {
+        export interface ImageOptions extends LayerOptions {
         }
 
-        interface LayerOptions extends BaseOptions {
+        export interface LayerOptions extends BaseOptions {
 
             /**
              * The layer source (or null if not yet set).
@@ -1061,7 +1061,7 @@ declare namespace olx {
             source?: ol.source.Source;
         }
 
-        interface TileOptions extends LayerOptions {
+        export interface TileOptions extends LayerOptions {
 
             /**
              * Preload. Load low-resolution tiles up to preload levels. By default preload is 0, which means no preloading.
@@ -1079,7 +1079,7 @@ declare namespace olx {
             useInterimTilesOnError?: boolean;
         }
 
-        interface VectorOptions extends LayerOptions {
+        export interface VectorOptions extends LayerOptions {
 
             /**
              * When set to true, feature batches will be recreated during animations. This means that no vectors will be shown clipped, but the setting will have a performance impact for large amounts of vector data. When set to false, batches will be recreated when no animation is active. Default is false.
@@ -1114,9 +1114,9 @@ declare namespace olx {
         }
     }
 
-    namespace source {
+    export namespace source {
 
-        interface VectorOptions {
+        export interface VectorOptions {
             /**
              * Attributions.
              */
@@ -1175,7 +1175,7 @@ declare namespace olx {
             wrapX?: boolean;
         }
 
-        interface ClusterOptions extends VectorOptions{
+        export interface ClusterOptions extends VectorOptions{
 
             /**
              * Minimum distance in pixels between clusters. Default is 20.
@@ -1192,7 +1192,7 @@ declare namespace olx {
 
         }
 
-        interface WMTSOptions {
+        export interface WMTSOptions {
             attributions?: Array<ol.Attribution>;
             crossOrigin?: string;
             logo?: string | olx.LogoOptions;
@@ -1216,13 +1216,13 @@ declare namespace olx {
         }
     }
 
-    namespace style {
+    export namespace style {
 
-        interface FillOptions {
+        export interface FillOptions {
             color?: ol.Color | string;
         }
 
-        interface StyleOptions {
+        export interface StyleOptions {
             geometry?: string | ol.geom.Geometry | ol.style.GeometryFunction;
             fill?: ol.style.Fill;
             image?: ol.style.Image;
@@ -1231,7 +1231,7 @@ declare namespace olx {
             zIndex?: number;
         }
 
-        interface TextOptions {
+        export interface TextOptions {
             font?: string;
             offsetX?: number;
             offsetY?: number;
@@ -1243,7 +1243,7 @@ declare namespace olx {
             fill?: ol.style.Fill;
             stroke?: ol.style.Stroke;
         }
-        interface StrokeOptions {
+        export interface StrokeOptions {
             color?: ol.Color | string;
             lineCap?: string;
             lineJoin?: string;
@@ -1251,7 +1251,7 @@ declare namespace olx {
             miterLimit?: number;
             width?: number;
         }
-        interface IconOptions {
+        export interface IconOptions {
             anchor?: Array<number>;
             anchorOrigin?: string;
             anchorXUnits?: string;
@@ -1269,7 +1269,7 @@ declare namespace olx {
             imgSize?: ol.Size;
             src?: string;
         }
-        interface CircleOptions {
+        export interface CircleOptions {
             fill?: ol.style.Fill;
             radius: number;
             snapToPixel?: boolean;
@@ -1277,9 +1277,9 @@ declare namespace olx {
         }
     }
 
-    namespace tilegrid {
+    export namespace tilegrid {
 
-        interface TileGridOptions {
+        export interface TileGridOptions {
 
             /**
              * Extent for the tile grid. No tiles outside this extent will be requested by ol.source.Tile sources. When no origin or origins are configured, the origin will be set to the bottom-left corner of the extent. When no sizes are configured, they will be calculated from the extent.
@@ -1317,7 +1317,7 @@ declare namespace olx {
             tileSizes?: Array<number | ol.Size>;
         }
 
-        interface WMTSOptions {
+        export interface WMTSOptions {
 
             /**
              * Extent for the tile grid. No tiles outside this extent will be requested by ol.source.WMTS sources. When no origin or origins are configured, the origin will be calculated from the extent. When no sizes are configured, they will be calculated from the extent.
@@ -1365,7 +1365,7 @@ declare namespace olx {
             widths?: Array<number>;
         }
 
-        interface XYZOptions {
+        export interface XYZOptions {
 
             /**
              * Extent for the tile grid. The origin for an XYZ tile grid is the top-left corner of the extent. The zero level of the grid is defined by the resolution at which one tile fits in the provided extent. If not provided, the extent of the EPSG:3857 projection is used.
@@ -1388,7 +1388,7 @@ declare namespace olx {
             tileSize?: number | ol.Size;
         }
 
-        interface ZoomifyOptions {
+        export interface ZoomifyOptions {
 
             /**
              * Resolutions
@@ -1397,9 +1397,9 @@ declare namespace olx {
         }
     }
 
-    namespace view {
+    export namespace view {
 
-        interface FitGeometryOptions {
+        export interface FitGeometryOptions {
 
             /**
              * Padding (in pixels) to be cleared inside the view. Values in the array are top, right, bottom and left padding. Default is [0, 0, 0, 0].
@@ -1428,15 +1428,15 @@ declare namespace olx {
         }
     }
 
-    namespace format {
-        interface WKTOptions {
+    export namespace format {
+        export interface WKTOptions {
             /**
              * Whether to split GeometryCollections into multiple features on reading. Default is false.
              */
             splitCollection?: boolean;
         }
 
-        interface GeoJSONOptions {
+        export interface GeoJSONOptions {
 
             /**
              * Default data projection.
@@ -1449,7 +1449,7 @@ declare namespace olx {
             geometryName?: string;
         }
 
-        interface ReadOptions {
+        export interface ReadOptions {
 
             /**
              * Projection of the data we are reading. If not provided, the projection will be derived from the data (where possible) or the defaultDataProjection of the format is assigned (where set). If the projection can not be derived from the data and if no defaultDataProjection is set for a format, the features will not be reprojected.
@@ -1462,7 +1462,7 @@ declare namespace olx {
             featureProjection?: ol.proj.ProjectionLike | ol.proj.Projection;
         }
 
-        interface WriteOptions {
+        export interface WriteOptions {
 
             /**
              * Projection of the data we are writing. If not provided, the defaultDataProjection of the format is assigned (where set). If no defaultDataProjection is set for a format, the features will be returned in the featureProjection.
@@ -1481,8 +1481,8 @@ declare namespace olx {
         }
     }
 
-    namespace control {
-        interface ControlOptions {
+    export namespace control {
+        export interface ControlOptions {
             /**
              * The element is the control's container element. This only needs to be specified if you're developing a custom control.
              */
@@ -1759,9 +1759,19 @@ export declare namespace ol {
          * Set the style for the feature. This can be a single style object, an array of styles, or a function that takes a resolution and returns an array of styles. If it is null the feature has no style (a null style).
          * @param style Style for this feature.
          */
-        setStyle(style: ol.style.Style|Array<ol.style.Style>|ol.FeatureStyleFunction): void;
+        setStyle(style: ol.style.Style): void;
 
+        /**
+         * Set the style for the feature. This can be a single style object, an array of styles, or a function that takes a resolution and returns an array of styles. If it is null the feature has no style (a null style).
+         * @param style Style for this feature.
+         */
+        setStyle(style: Array<ol.style.Style>): void;
 
+        /**
+         * Set the style for the feature. This can be a single style object, an array of styles, or a function that takes a resolution and returns an array of styles. If it is null the feature has no style (a null style).
+         * @param style Style for this feature.
+         */
+        setStyle(style: ol.FeatureStyleFunction): void;
     }
 
     /**
@@ -1827,8 +1837,19 @@ export declare namespace ol {
          * Set the style for features. This can be a single style object, an array of styles, or a function that takes a feature and resolution and returns an array of styles.
          * @param style Overlay style
          */
-        setStyle(style: ol.style.Style|Array<ol.style.Style>|ol.style.StyleFunction): void;
+        setStyle(style: ol.style.Style): void;
 
+        /**
+         * Set the style for features. This can be a single style object, an array of styles, or a function that takes a feature and resolution and returns an array of styles.
+         * @param style Overlay style
+         */
+        setStyle(style: Array<ol.style.Style>): void;
+
+        /**
+         * Set the style for features. This can be a single style object, an array of styles, or a function that takes a feature and resolution and returns an array of styles.
+         * @param style Overlay style
+         */
+        setStyle(style: ol.style.StyleFunction): void;
     }
 
     /**
@@ -4614,9 +4635,26 @@ export declare namespace ol {
 
             /**
              * Set the style for features. This can be a single style object, an array of styles, or a function that takes a feature and resolution and returns an array of styles. If it is undefined the default style is used. If it is null the layer has no style (a null style), so only features that have their own styles will be rendered in the layer. See ol.style for information on the default style.
-             * @param style Layer style
              */
-            setStyle(style: ol.style.Style|Array<ol.style.Style>|ol.style.StyleFunction): void;
+            setStyle(): void;
+
+            /**
+             * Set the style for features. This can be a single style object, an array of styles, or a function that takes a feature and resolution and returns an array of styles. If it is undefined the default style is used. If it is null the layer has no style (a null style), so only features that have their own styles will be rendered in the layer. See ol.style for information on the default style.
+             * @param layer Layer style
+             */
+            setStyle(style: ol.style.Style): void;
+
+            /**
+             * Set the style for features. This can be a single style object, an array of styles, or a function that takes a feature and resolution and returns an array of styles. If it is undefined the default style is used. If it is null the layer has no style (a null style), so only features that have their own styles will be rendered in the layer. See ol.style for information on the default style.
+             * @param layer Layer style
+             */
+            setStyle(style: Array<ol.style.Style>): void;
+
+            /**
+             * Set the style for features. This can be a single style object, an array of styles, or a function that takes a feature and resolution and returns an array of styles. If it is undefined the default style is used. If it is null the layer has no style (a null style), so only features that have their own styles will be rendered in the layer. See ol.style for information on the default style.
+             * @param Layer style
+             */
+            setStyle(style: ol.style.StyleFunction): void;
 
             /**
              * Sets the layer to be rendered on top of other layers on a map. The map will not manage this layer
@@ -4654,7 +4692,7 @@ export declare namespace ol {
 
         /**
          * Creates a strategy function for loading features based on a tile grid.
-         * @param tileGrid Tile grid
+         * @param tilegrid Tile grid
          * @returns Loading strategy
          */
         export function tile(tileGrid: ol.tilegrid.TileGrid): ol.LoadingStrategy;

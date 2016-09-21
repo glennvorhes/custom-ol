@@ -18,7 +18,7 @@ def prepend_export(input_string):
     :rtype: str
     """
 
-    candidates = ['declare namespace', '  interface', '  type ', '  function', '  class', '  namespace']
+    candidates = ['declare namespace', '  interface', '  type ', '  function', '  class ', '  namespace']
     """
     :type: list[str]
     """
@@ -48,7 +48,7 @@ add_exports = False
 for i in range(len(input_lines)):
 
     if not add_exports:
-        add_exports = input_lines[i].find('namespace ol ') > -1
+        add_exports = input_lines[i].find('namespace olx ') > -1
 
     if add_exports:
         input_lines[i] = prepend_export(input_lines[i])
