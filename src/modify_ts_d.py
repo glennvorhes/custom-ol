@@ -1,7 +1,4 @@
-import os
 
-
-print(os.linesep)
 input_lines = []
 """
 :type: list{str]
@@ -48,13 +45,42 @@ add_exports = False
 for i in range(len(input_lines)):
 
     if not add_exports:
-        add_exports = input_lines[i].find('namespace olx ') > -1
+        add_exports = input_lines[i].find('namespace ol ') > -1
 
     if add_exports:
         input_lines[i] = prepend_export(input_lines[i])
 
 with open(r'..\ol\openlayers-npm.d.ts', 'w') as out_file:
     out_file.writelines(input_lines)
+
+
+olx_lines = []
+
+for i in range(len(input_lines)):
+    if input_lines[i].find('namespace ol ') > -1:
+        break
+
+    olx_lines.append(input_lines[i])
+
+olx_lines.append('declare module "openlayers" {\n')
+olx_lines.append('    export = olx;\n')
+olx_lines.append('}\n')
+
+
+
+
+
+
+with open(r'..\ol\openlayers-olx.d.ts', 'w') as out_file:
+    out_file.writelines(olx_lines)
+
+
+
+
+
+# declare module "openlayers" {
+#     export = ol;
+# }
 
 
 
