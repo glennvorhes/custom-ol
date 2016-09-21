@@ -1510,7 +1510,7 @@ export declare namespace ol {
 
     export interface ImageLoadFunctionType { (image: ol.Image, url: string): void }
 
-    type AttributionLike = string | Array<string> | ol.Attribution | Array<ol.Attribution>
+    export type AttributionLike = string | Array<string> | ol.Attribution | Array<ol.Attribution>
 
     /**
      * An attribution for a layer source.
@@ -1532,7 +1532,7 @@ export declare namespace ol {
     /**
      * An expanded version of standard JS Array, adding convenience methods for manipulation. Add and remove changes to the Collection trigger a Collection event. Note that this does not cover changes to the objects within the Collection; they trigger events on the appropriate object, not on the Collection as a whole.
      */
-    class Collection<T> extends ol.Object {
+    export class Collection<T> extends ol.Object {
 
         /**
          * @constructor
@@ -1623,7 +1623,7 @@ export declare namespace ol {
     /**
      * Events emitted by ol.Collection instances are instances of this type.
      */
-    class CollectionEvent<T> extends ol.events.Event {
+    export class CollectionEvent<T> extends ol.events.Event {
 
         /**
          * The element that is added to or removed from the collection.
@@ -1634,7 +1634,7 @@ export declare namespace ol {
     /**
      * The ol.DeviceOrientation class provides access to information from DeviceOrientation events.
      */
-    class DeviceOrientation extends ol.Object {
+    export class DeviceOrientation extends ol.Object {
 
         /**
          * @constructor
@@ -1682,7 +1682,7 @@ export declare namespace ol {
     /**
      * Events emitted by ol.interaction.DragBox instances are instances of this type.
      */
-    class DragBoxEvent extends ol.events.Event {
+    export class DragBoxEvent extends ol.events.Event {
 
         /**
          * The coordinate of the drag event.
@@ -1693,7 +1693,7 @@ export declare namespace ol {
     /**
      * A vector object for geographic features with a geometry and other attribute properties, similar to the features in vector file formats like GeoJSON.
      */
-    class Feature extends ol.Object {
+    export class Feature extends ol.Object {
 
         /**
          * @constructor
@@ -1777,7 +1777,7 @@ export declare namespace ol {
     /**
      * A mechanism for changing the style of a small number of features on a temporary basis, for example highlighting.
      */
-    class FeatureOverlay {
+    export class FeatureOverlay {
 
         /**
          * @constructor
@@ -1855,7 +1855,7 @@ export declare namespace ol {
     /**
      * Helper class for providing HTML5 Geolocation capabilities. The Geolocation API is used to locate a user's position.
      */
-    class Geolocation extends ol.Object {
+    export class Geolocation extends ol.Object {
 
         /**
          * @constructor
@@ -1945,7 +1945,7 @@ export declare namespace ol {
     /**
      * Render a grid for a coordinate system on a map.
      */
-    class Graticule {
+    export class Graticule {
         /**
          * @constructor
          * @param options Options.
@@ -1980,7 +1980,7 @@ export declare namespace ol {
     /**
      *
      */
-    class Image extends ol.ImageBase {
+    export class Image extends ol.ImageBase {
 
         /**
          * Get the HTML image element (may be a Canvas, Image, or Video).
@@ -2007,13 +2007,13 @@ export declare namespace ol {
     /**
      *
      */
-    class ImageBase {
+    export class ImageBase {
     }
 
     /**
      *
      */
-    class ImageTile extends ol.Tile {
+    export class ImageTile extends ol.Tile {
 
         /**
          * Get the HTML image element for this tile (may be a Canvas, Image, or Video).
@@ -2041,7 +2041,7 @@ export declare namespace ol {
     /**
      * Implementation of inertial deceleration for map movement.
      */
-    class Kinetic {
+    export class Kinetic {
 
         /**
          * @constructor
@@ -2055,7 +2055,7 @@ export declare namespace ol {
     /**
      * The map is the core component of OpenLayers. For a map to render, a view, one or more layers, and a target container are needed.
      */
-    class Map extends ol.Object {
+    export class Map extends ol.Object {
 
         /**
          * @constructor
@@ -2289,7 +2289,7 @@ export declare namespace ol {
     /**
      * Events emitted as map browser events are instances of this type. See ol.Map for which events trigger a map browser event.
      */
-    class MapBrowserEvent extends MapEvent {
+    export class MapBrowserEvent extends MapEvent {
 
         /**
          * The coordinate of the original browser event
@@ -2338,7 +2338,7 @@ export declare namespace ol {
     /**
      * Events emitted as map events are instances of this type. See ol.Map for which events trigger a map event.
      */
-    class MapEvent extends ol.events.Event {
+    export class MapEvent extends ol.events.Event {
 
         /**
          * The frame state at the time of the event.
@@ -2354,7 +2354,7 @@ export declare namespace ol {
     /**
      * Abstract base class; normally only used for creating subclasses and not instantiated in apps. Most non-trivial classes inherit from this.
      */
-    class Object extends Observable {
+    export class Object extends Observable {
 
         /**
          * @constructor
@@ -2408,7 +2408,7 @@ export declare namespace ol {
     /**
      * Events emitted by ol.Object instances are instances of this type.
      */
-    class ObjectEvent extends ol.events.Event {
+    export class ObjectEvent extends ol.events.Event {
 
         /**
          * The name of the property whose value is changing.
@@ -2424,7 +2424,7 @@ export declare namespace ol {
     /**
      * Abstract base class; normally only used for creating subclasses and not instantiated in apps. An event target providing convenient methods for listener registration and unregistration. A generic change event is always available through ol.Observable#changed.
      */
-    class Observable {
+    export class Observable {
 
         /**
          * Removes an event listener using the key returned by on() or once().
@@ -2496,7 +2496,7 @@ export declare namespace ol {
     /**
      * An element to be displayed over the map and attached to a single map location.
      */
-    class Overlay extends ol.Object {
+    export class Overlay extends ol.Object {
 
         /**
          * @constructor
@@ -2568,7 +2568,7 @@ export declare namespace ol {
     /**
      * Events emitted by ol.interaction.Select instances are instances of this type.
      */
-    class SelectEvent extends ol.events.Event {
+    export class SelectEvent extends ol.events.Event {
 
         /**
          * Deselected features array.
@@ -2589,7 +2589,7 @@ export declare namespace ol {
     /**
      * Class to create objects that can be used with ol.geom.Polygon.circular.
      */
-    class Sphere {
+    export class Sphere {
 
         /**
          * @constructor
@@ -2616,7 +2616,7 @@ export declare namespace ol {
     /**
      * Base class for tiles.
      */
-    class Tile {
+    export class Tile {
 
         /**
          * Get the tile coordinate for this tile.
@@ -2628,7 +2628,7 @@ export declare namespace ol {
     /**
      * An ol.View object represents a simple 2D view of the map.
      */
-    class View extends ol.Object {
+    export class View extends ol.Object {
 
         /**
          * @constructor
@@ -2742,81 +2742,81 @@ export declare namespace ol {
     /**
      * The animation static methods are designed to be used with the ol.Map#beforeRender method.
      */
-    namespace animation {
+    export namespace animation {
 
         /**
          * Generate an animated transition that will "bounce" the resolution as it approaches the final value.
          * @param options Bounce options.
          */
-        function bounce(options: olx.animation.BounceOptions): ol.PreRenderFunction;
+        export function bounce(options: olx.animation.BounceOptions): ol.PreRenderFunction;
 
         /**
          * Generate an animated transition while updating the view center.
          * @param options Pan options.
          */
-        function pan(options: olx.animation.PanOptions): ol.PreRenderFunction;
+        export function pan(options: olx.animation.PanOptions): ol.PreRenderFunction;
 
         /**
          * Generate an animated transition while updating the view rotation.
          * @param options Rotate options.
          */
-        function rotate(options: olx.animation.RotateOptions): ol.PreRenderFunction;
+        export function rotate(options: olx.animation.RotateOptions): ol.PreRenderFunction;
 
         /**
          * Generate an animated transition while updating the view resolution.
          * @param options Zoom options.
          */
-        function zoom(options: olx.animation.ZoomOptions): ol.PreRenderFunction;
+        export function zoom(options: olx.animation.ZoomOptions): ol.PreRenderFunction;
     }
 
     /**
      * Return the color as an array. This function maintains a cache of calculated arrays which means the result should not be modified.
      */
-    namespace color {
+    export namespace color {
 
         /**
          * Return the color as an array. This function maintains a cache of calculated arrays which means the result should not be modified.
          * @param color Color.
          */
-        function asArray(color: ol.Color): ol.Color;
+        export function asArray(color: ol.Color): ol.Color;
 
         /**
          * Return the color as an array. This function maintains a cache of calculated arrays which means the result should not be modified.
          * @param color Color.
          */
-        function asArray(color: string): ol.Color;
+        export function asArray(color: string): ol.Color;
 
         /**
          * Return the color as an rgba string.
          * @param color Color.
          */
-        function asString(color: ol.Color): string;
+        export function asString(color: ol.Color): string;
 
         /**
          * Return the color as an rgba string.
          * @param color Color.
          */
-        function asString(color: string): string;
+        export function asString(color: string): string;
     }
 
-    namespace control {
+    export namespace control {
 
         /**
          * Set of controls included in maps by default. Unless configured otherwise, this returns a collection containing an instance of each of the following controls: ol.control.Zoom, ol.control.Rotate, ol.control.Attribution
          * @param options Defaults options
          * @returns Control.s
          */
-        function defaults(options?: olx.control.DefaultsOptions): ol.Collection<ol.control.Control>;
+        export function defaults(options?: olx.control.DefaultsOptions): ol.Collection<ol.control.Control>;
 
-        namespace ScaleLine {
+        export namespace ScaleLine {
 
             /**
              * Units for the scale line. Supported values are 'degrees', 'imperial', 'nautical', 'metric', 'us'.
              */
-            type Units = 'degrees' | 'imperial' | 'nautical' | 'metric' | 'us';
+            export type Units = 'degrees' | 'imperial' | 'nautical' | 'metric' | 'us';
         }
 
-        class Control extends ol.Object{
+        export class Control extends ol.Object{
             constructor(options: olx.control.ControlOptions);
 
             /**
@@ -2841,16 +2841,16 @@ export declare namespace ol {
 
         }
 
-        class Attribution extends Control {
+        export class Attribution extends Control {
         }
 
-        class FullScreen extends Control {
+        export class FullScreen extends Control {
         }
 
-        class MousePosition extends Control {
+        export class MousePosition extends Control {
         }
 
-        class OverviewMap extends Control {
+        export class OverviewMap extends Control {
             constructor(options?: olx.OverviewMapOptions);
 
             /**
@@ -2887,11 +2887,11 @@ export declare namespace ol {
             setCollapsible(collapsible: boolean): void;
         }
 
-        class Rotate extends Control {
+        export class Rotate extends Control {
             constructor(opt_options?: olx.RotateOptions);
         }
 
-        class ScaleLine extends Control {
+        export class ScaleLine extends Control {
 
             /**
              * Return the units to use in the scale line.
@@ -2905,18 +2905,18 @@ export declare namespace ol {
 
         }
 
-        class Zoom extends Control{
+        export class Zoom extends Control{
         }
 
-        class ZoomSlider extends Control{
+        export class ZoomSlider extends Control{
         }
 
-        class ZoomToExtent extends Control{
+        export class ZoomToExtent extends Control{
         	constructor(options?: olx.ZoomToExtentOptions);
         }
     }
 
-    namespace coordinate {
+    export namespace coordinate {
 
         /**
          * Add delta to coordinate. coordinate is modified in place and returned by the function.
@@ -2924,14 +2924,14 @@ export declare namespace ol {
          * @param delta Delta
          * @returns The input coordinate adjusted by the given delta.
          */
-        function add(coordinate: ol.Coordinate, delta: ol.Coordinate): ol.Coordinate;
+        export function add(coordinate: ol.Coordinate, delta: ol.Coordinate): ol.Coordinate;
 
         /**
          * Returns a ol.CoordinateFormatType function that can be used to format a {ol.Coordinate} to a string.
          * @param fractionDigits The number of digits to include after the decimal point. Default is 0.
          * @returns Coordinate format
          */
-        function createStringXY(fractionDigits?: number): ol.CoordinateFormatType;
+        export function createStringXY(fractionDigits?: number): ol.CoordinateFormatType;
 
         /**
          * Transforms the given ol.Coordinate to a string using the given string template. The strings {x} and {y} in the template will be replaced with the first and second coordinate values respectively.
@@ -2940,7 +2940,7 @@ export declare namespace ol {
          * @param fractionDigits The number of digits to include after the decimal point. Default is 0.
          * @returns Formatted coordinate
          */
-        function format(coordinate: ol.Coordinate, template: string, fractionDigits?: number): string;
+        export function format(coordinate: ol.Coordinate, template: string, fractionDigits?: number): string;
 
         /**
          * Rotate coordinate by angle. coordinate is modified in place and returned by the function.
@@ -2948,14 +2948,14 @@ export declare namespace ol {
          * @param angle Angle in radian
          * @returns Coordinatee
          */
-        function rotate(coordinate: ol.Coordinate, angle: number): ol.Coordinate;
+        export function rotate(coordinate: ol.Coordinate, angle: number): ol.Coordinate;
 
         /**
          * Format a geographic coordinate with the hemisphere, degrees, minutes, and seconds.
          * @param coordinate COordinate
          * @returns Hemisphere, degrees, minutes and seconds.
          */
-        function toStringHDMS(coordinate?: ol.Coordinate): string;
+        export function toStringHDMS(coordinate?: ol.Coordinate): string;
 
         /**
          * Format a coordinate as a comma delimited string.
@@ -2963,68 +2963,68 @@ export declare namespace ol {
          * @param fractionDigits The number of digits to include after the decimal point. Default is 0.
          * @returns XY
          */
-        function toStringXY(coordinate?: ol.Coordinate, fractionDigits?: number): string;
+        export function toStringXY(coordinate?: ol.Coordinate, fractionDigits?: number): string;
     }
 
     /**
      * Easing functions for ol.animation.
      */
-    namespace easing {
+    export namespace easing {
 
         /**
          * Start slow and speed up.
          * @param number Input between 0 and 1
          * @returns Output between 0 and 1
          */
-        function easeIn(t: number): number;
+        export function easeIn(t: number): number;
 
         /**
          * Start fast and slow down.
          * @param number Input between 0 and 1
          * @returns Output between 0 and 1
          */
-        function easeOut(t: number): number;
+        export function easeOut(t: number): number;
 
         /**
         * Start slow, speed up, and then slow down again.
         * @param number Input between 0 and 1
         * @returns Output between 0 and 1
         */
-        function inAndOut(t: number): number;
+        export function inAndOut(t: number): number;
 
         /**
         * Maintain a constant speed over time.
         * @param number Input between 0 and 1
         * @returns Output between 0 and 1
         */
-        function linear(t: number): number;
+        export function linear(t: number): number;
 
         /**
         * Start slow, speed up, and at the very end slow down again. This has the same general behavior as ol.easing.inAndOut, but the final slowdown is delayed.
         * @param number Input between 0 and 1
         * @returns Output between 0 and 1
         */
-        function upAndDown(t: number): number;
+        export function upAndDown(t: number): number;
     }
 
-    namespace events {
-        namespace condition {
-            function altKeyOnly(mapBrowserEvent: ol.MapBrowserEvent): boolean;
-            function altShiftKeyOnly(mapBrowserEvent: ol.MapBrowserEvent): boolean;
-            function always(mapBrowserEvent: ol.MapBrowserEvent): boolean;
-            function click(mapBrowserEvent: ol.MapBrowserEvent): boolean;
-            function doubleClick(mapBrowserEvent: ol.MapBrowserEvent): boolean;
-            function mouseOnly(mapBrowserEvent: ol.MapBrowserEvent): boolean;
-            function never(mapBrowserEvent: ol.MapBrowserEvent): boolean;
-            function noModifierKeys(mapBrowserEvent: ol.MapBrowserEvent): boolean;
-            function platformModifierKeyOnly(mapBrowserEvent: ol.MapBrowserEvent): boolean;
-            function pointerMove(mapBrowserEvent: ol.MapBrowserEvent): boolean;
-            function shiftKeyOnly(mapBrowserEvent: ol.MapBrowserEvent): boolean;
-            function singleClick(mapBrowserEvent: ol.MapBrowserEvent): boolean;
-            function targetNotEditable(mapBrowserEvent: ol.MapBrowserEvent): boolean;
+    export namespace events {
+        export namespace condition {
+            export function altKeyOnly(mapBrowserEvent: ol.MapBrowserEvent): boolean;
+            export function altShiftKeyOnly(mapBrowserEvent: ol.MapBrowserEvent): boolean;
+            export function always(mapBrowserEvent: ol.MapBrowserEvent): boolean;
+            export function click(mapBrowserEvent: ol.MapBrowserEvent): boolean;
+            export function doubleClick(mapBrowserEvent: ol.MapBrowserEvent): boolean;
+            export function mouseOnly(mapBrowserEvent: ol.MapBrowserEvent): boolean;
+            export function never(mapBrowserEvent: ol.MapBrowserEvent): boolean;
+            export function noModifierKeys(mapBrowserEvent: ol.MapBrowserEvent): boolean;
+            export function platformModifierKeyOnly(mapBrowserEvent: ol.MapBrowserEvent): boolean;
+            export function pointerMove(mapBrowserEvent: ol.MapBrowserEvent): boolean;
+            export function shiftKeyOnly(mapBrowserEvent: ol.MapBrowserEvent): boolean;
+            export function singleClick(mapBrowserEvent: ol.MapBrowserEvent): boolean;
+            export function targetNotEditable(mapBrowserEvent: ol.MapBrowserEvent): boolean;
         }
-        interface ConditionType { (mapBrowseEvent: ol.MapBrowserEvent): boolean; }
-        class Event {
+        export interface ConditionType { (mapBrowseEvent: ol.MapBrowserEvent): boolean; }
+        export class Event {
           target: any;
           type: string;
           preventDefault(): void;
@@ -3032,7 +3032,7 @@ export declare namespace ol {
         }
     }
 
-    namespace extent {
+    export namespace extent {
 
         /**
          * Apply a transform function to the extent.
@@ -3041,14 +3041,14 @@ export declare namespace ol {
          * @param destinationExtent Destination Extent
          * @returns Extent
          */
-        function applyTransform(extent: ol.Extent, transformFn: ol.TransformFunction, destinationExtent?: ol.Extent): ol.Extent;
+        export function applyTransform(extent: ol.Extent, transformFn: ol.TransformFunction, destinationExtent?: ol.Extent): ol.Extent;
 
         /**
          * Build an extent that includes all given coordinates.
          * @param coordinates Coordinates
          * @returns Bounding extent
          */
-        function boundingExtent(coordinates: Array<ol.Coordinate>): ol.Extent;
+        export function boundingExtent(coordinates: Array<ol.Coordinate>): ol.Extent;
 
         /**
          * Return extent increased by the provided value.
@@ -3057,7 +3057,7 @@ export declare namespace ol {
          * @param destinationExtent Destination Extent
          * @returns Extent
          */
-        function buffer(extent: ol.Extent, value: number, destinationExtent?: ol.Extent): ol.Extent;
+        export function buffer(extent: ol.Extent, value: number, destinationExtent?: ol.Extent): ol.Extent;
 
         /**
          * Check if the passed coordinate is contained or on the edge of the extent.
@@ -3065,7 +3065,7 @@ export declare namespace ol {
          * @param coordinate Coordinate
          * @returns The coordinate is contained in the extent
          */
-        function containsCoordinate(extent: ol.Extent, coordinate: ol.Coordinate): boolean;
+        export function containsCoordinate(extent: ol.Extent, coordinate: ol.Coordinate): boolean;
 
         /**
          * Check if one extent contains another. An extent is deemed contained if it lies completely within the other extent, including if they share one or more edges.
@@ -3073,7 +3073,7 @@ export declare namespace ol {
          * @param extent2 Extent 2
          * @returns The second extent is contained by or on the edge of the first
          */
-        function containsExtent(extent1: ol.Extent, extent2: ol.Extent): boolean;
+        export function containsExtent(extent1: ol.Extent, extent2: ol.Extent): boolean;
 
         /**
          * Check if the passed coordinate is contained or on the edge of the extent.
@@ -3082,13 +3082,13 @@ export declare namespace ol {
          * @param y Y coordinate
          * @returns The x, y values are contained in the extent.
          */
-        function containsXY(extent: ol.Extent, x: number, y: number): boolean;
+        export function containsXY(extent: ol.Extent, x: number, y: number): boolean;
 
         /**
          * Create an empty extent.
          * @returns Empty extent
          */
-        function createEmpty(): ol.Extent;
+        export function createEmpty(): ol.Extent;
 
         /**
          * Determine if two extents are equivalent.
@@ -3096,7 +3096,7 @@ export declare namespace ol {
          * @param extent2 Extent 2
          * @returns The two extents are equivalent
          */
-        function equals(extent1: ol.Extent, extent2: ol.Extent): boolean;
+        export function equals(extent1: ol.Extent, extent2: ol.Extent): boolean;
 
         /**
          * Modify an extent to include another extent.
@@ -3104,35 +3104,35 @@ export declare namespace ol {
          * @param extent2 The extent that will be included in the first.
          * @returns A reference to the first (extended) extent.
          */
-        function extend(extent1: ol.Extent, extent2: ol.Extent): ol.Extent;
+        export function extend(extent1: ol.Extent, extent2: ol.Extent): ol.Extent;
 
         /**
          * Get the bottom left coordinate of an extent.
          * @param extent Extent
          * @returns Bottom left coordinate
          */
-        function getBottomLeft(extent: ol.Extent): ol.Coordinate;
+        export function getBottomLeft(extent: ol.Extent): ol.Coordinate;
 
         /**
          * Get the bottom right coordinate of an extent.
          * @param extent Extent
          * @returns Bottom right coordinate
          */
-        function getBottomRight(extent: ol.Extent): ol.Coordinate;
+        export function getBottomRight(extent: ol.Extent): ol.Coordinate;
 
         /**
          * Get the center coordinate of an extent.
          * @param extent Extent
          * @returns Center
          */
-        function getCenter(extent: ol.Extent): ol.Coordinate;
+        export function getCenter(extent: ol.Extent): ol.Coordinate;
 
         /**
          * Get the height of an extent.
          * @param extent Extent
          * @returns Height
          */
-        function getHeight(extent: ol.Extent): number;
+        export function getHeight(extent: ol.Extent): number;
 
         /**
          * Get the intersection of two extents.
@@ -3141,35 +3141,35 @@ export declare namespace ol {
          * @param extent Optional extent to populate with intersection.
          * @returns Intersecting extent
          */
-        function getIntersection(extent1: ol.Extent, extent2: ol.Extent, extent?: ol.Extent): ol.Extent;
+        export function getIntersection(extent1: ol.Extent, extent2: ol.Extent, extent?: ol.Extent): ol.Extent;
 
         /**
          * Get the size (width, height) of an extent.
          * @param extent Extent
          * @returns The extent size
          */
-        function getSize(extent: ol.Extent): ol.Size;
+        export function getSize(extent: ol.Extent): ol.Size;
 
         /**
          * Get the top left coordinate of an extent.
          * @param extent Extent
          * @returns Top left coordinate
          */
-        function getTopLeft(extent: ol.Extent): ol.Coordinate;
+        export function getTopLeft(extent: ol.Extent): ol.Coordinate;
 
         /**
          * Get the top right coordinate of an extent.
          * @param extent Extent
          * @returns Top right coordinate
          */
-        function getTopRight(extent: ol.Extent): ol.Coordinate;
+        export function getTopRight(extent: ol.Extent): ol.Coordinate;
 
         /**
          * Get the width of an extent.
          * @param extent Extent
          * @returns Width
          */
-        function getWidth(extent: ol.Extent): number;
+        export function getWidth(extent: ol.Extent): number;
 
         /**
          * Determine if one extent intersects another.
@@ -3177,20 +3177,20 @@ export declare namespace ol {
          * @param extent2 Extent 2
          * @returns The two extents intersects
          */
-        function intersects(extent1: ol.Extent, extent2: ol.Extent): boolean;
+        export function intersects(extent1: ol.Extent, extent2: ol.Extent): boolean;
 
         /**
          * Determine if an extent is empty.
          * @param extent Extent
          * @returns Is empty
          */
-        function isEmpty(extent: ol.Extent): boolean;
+        export function isEmpty(extent: ol.Extent): boolean;
     }
 
     /**
      * Loading mechanisms for vector data.
      */
-    namespace featureloader {
+    export namespace featureloader {
 
         /**
          * Create an XHR feature loader for a url and format. The feature loader loads features (with XHR), parses the features, and adds them to the vector source.
@@ -3198,25 +3198,25 @@ export declare namespace ol {
          * @param format Feature format
          * @returns The feature loader
          */
-        function xhr(url: string, format: ol.format.Feature): ol.FeatureLoader;
+        export function xhr(url: string, format: ol.format.Feature): ol.FeatureLoader;
     }
 
-    namespace format {
+    export namespace format {
 
         // Type definitions
-        interface IGCZ extends String { }
+        export interface IGCZ extends String { }
 
         // Classes
-        class EsriJSON {
+        export class EsriJSON {
         }
 
-        class Feature {
+        export class Feature {
         }
 
         /**
          * Feature format for reading and writing data in the GeoJSON format.
          */
-        class GeoJSON extends ol.format.JSONFeature {
+        export class GeoJSON extends ol.format.JSONFeature {
 
             /**
              * @constructor
@@ -3304,47 +3304,47 @@ export declare namespace ol {
             writeGeometryObject(geometry: ol.geom.Geometry, options?: olx.format.WriteOptions): JSON;
         }
 
-        class GML {
+        export class GML {
         }
 
-        class GML2 {
+        export class GML2 {
         }
 
-        class GML3 {
+        export class GML3 {
         }
 
-        class GMLBase {
+        export class GMLBase {
         }
 
-        class GPX {
+        export class GPX {
         }
 
-        class IGC {
+        export class IGC {
         }
 
-        class JSONFeature {
+        export class JSONFeature {
         }
 
-        class KML {
+        export class KML {
         }
 
-        class OSMXML {
+        export class OSMXML {
         }
 
-        class Polyline {
+        export class Polyline {
         }
 
-        class TextFeature {
+        export class TextFeature {
         }
 
-        class TopoJSON {
+        export class TopoJSON {
         }
 
-        class WFS {
+        export class WFS {
             readFeatures(source: Document | Node | Object | string, option?: olx.format.ReadOptions): Array<ol.Feature>;
         }
 
-        class WKT {
+        export class WKT {
             constructor(opt_options?: olx.format.WKTOptions);
 
             /**
@@ -3396,33 +3396,33 @@ export declare namespace ol {
             writeGeometry(geometry: ol.geom.Geometry, options?: olx.format.WriteOptions): string;
         }
 
-        class WMSCapabilities {
+        export class WMSCapabilities {
         }
 
-        class WMSGetFeatureInfo {
+        export class WMSGetFeatureInfo {
         }
 
-        class WMTSCapabilities {
+        export class WMTSCapabilities {
         }
 
-        class XML {
+        export class XML {
         }
 
-        class XMLFeature {
+        export class XMLFeature {
         }
     }
 
-    namespace geom {
+    export namespace geom {
 
         // Type definitions
-        interface GeometryLayout extends String { }
-        interface GeometryType extends String { }
+        export interface GeometryLayout extends String { }
+        export interface GeometryType extends String { }
 
         /**
          * Abstract base class; only used for creating subclasses; do not instantiate
          * in apps, as cannot be rendered.
          */
-        class Circle extends ol.geom.SimpleGeometry {
+        export class Circle extends ol.geom.SimpleGeometry {
 
             /**
             * Test if the geometry and the passed extent intersect.
@@ -3453,7 +3453,7 @@ export declare namespace ol {
         /**
          * Abstract base class; normally only used for creating subclasses and not instantiated in apps. Base class for vector geometries.
          */
-        class Geometry extends ol.Object {
+        export class Geometry extends ol.Object {
 
             /**
              * Return the closest point of the geometry to the passed point as coordinate.
@@ -3485,7 +3485,7 @@ export declare namespace ol {
         /**
         * An array of ol.geom.Geometry objects.
         */
-        class GeometryCollection extends ol.geom.Geometry {
+        export class GeometryCollection extends ol.geom.Geometry {
 
             /**
              * constructor
@@ -3537,7 +3537,7 @@ export declare namespace ol {
         * Linear ring geometry. Only used as part of polygon; cannot be rendered
         * on its own.
         */
-        class LinearRing extends SimpleGeometry {
+        export class LinearRing extends SimpleGeometry {
 
             /**
              * constructor
@@ -3582,7 +3582,7 @@ export declare namespace ol {
         /**
         * Linestring geometry.
         */
-        class LineString extends ol.geom.SimpleGeometry {
+        export class LineString extends ol.geom.SimpleGeometry {
 
             /**
              * constructor
@@ -3654,7 +3654,7 @@ export declare namespace ol {
         /**
         * Multi-linestring geometry.
         */
-        class MultiLineString extends ol.geom.SimpleGeometry {
+        export class MultiLineString extends ol.geom.SimpleGeometry {
 
             /**
              * constructor
@@ -3741,7 +3741,7 @@ export declare namespace ol {
         /**
         * Multi-point geometry.
         */
-        class MultiPoint extends ol.geom.SimpleGeometry {
+        export class MultiPoint extends ol.geom.SimpleGeometry {
 
             /**
              * constructor
@@ -3805,7 +3805,7 @@ export declare namespace ol {
         /**
          * Multi-polygon geometry.
          */
-        class MultiPolygon extends ol.geom.SimpleGeometry {
+        export class MultiPolygon extends ol.geom.SimpleGeometry {
 
             /**
              * constructor
@@ -3889,7 +3889,7 @@ export declare namespace ol {
         /**
         * Point geometry.
         */
-        class Point extends SimpleGeometry {
+        export class Point extends SimpleGeometry {
 
             /**
              * constructor
@@ -3934,7 +3934,7 @@ export declare namespace ol {
         /**
         * Polygon geometry.
         */
-        class Polygon extends SimpleGeometry {
+        export class Polygon extends SimpleGeometry {
 
             /**
              * constructor
@@ -4032,7 +4032,7 @@ export declare namespace ol {
          * Abstract base class; only used for creating subclasses; do not instantiate
          * in apps, as cannot be rendered.
          */
-        class SimpleGeometry extends ol.geom.Geometry {
+        export class SimpleGeometry extends ol.geom.Geometry {
 
             /**
              * Apply a transform function to each coordinate of the geometry. The geometry is modified in place.
@@ -4069,26 +4069,26 @@ export declare namespace ol {
         }
     }
 
-    namespace has {
+    export namespace has {
     }
 
-    namespace interaction {
+    export namespace interaction {
         /**
          * Allows the user to zoom by double-clicking on the map.
          */
-        class DoubleClickZoom extends ol.interaction.Interaction {
+        export class DoubleClickZoom extends ol.interaction.Interaction {
             constructor(opt_options?: olx.interaction.DoubleClickZoomOptions);
         }
         /**
          * Handles input of vector data by drag and drop.
          */
-        class DragAndDrop extends ol.interaction.Interaction {
+        export class DragAndDrop extends ol.interaction.Interaction {
             constructor(opt_options?: olx.interaction.DragAndDropOptions);
         }
         /**
          * Events emitted by ol.interaction.DragAndDrop instances are instances of this type.
          */
-        class DragAndDropEvent extends ol.events.Event {
+        export class DragAndDropEvent extends ol.events.Event {
         }
         /**
          * Allows the user to draw a vector box by clicking and dragging on the map,
@@ -4098,7 +4098,7 @@ export declare namespace ol {
          *
          * This interaction is only supported for mouse devices.
          */
-        class DragBox extends ol.interaction.Pointer {
+        export class DragBox extends ol.interaction.Pointer {
             constructor(opt_options?: olx.interaction.DragBoxOptions);
             /**
              * Returns geometry of last drawn box.
@@ -4108,7 +4108,7 @@ export declare namespace ol {
         /**
          * Allows the user to pan the map by dragging the map.
          */
-        class DragPan extends ol.interaction.Pointer {
+        export class DragPan extends ol.interaction.Pointer {
             constructor(opt_options?: olx.interaction.DragPanOptions);
         }
         /**
@@ -4117,7 +4117,7 @@ export declare namespace ol {
          *
          * This interaction is only supported for mouse devices.
          */
-        class DragRotate extends ol.interaction.Pointer {
+        export class DragRotate extends ol.interaction.Pointer {
             constructor(opt_options?: olx.interaction.DragRotateOptions);
         }
         /**
@@ -4128,7 +4128,7 @@ export declare namespace ol {
          *
          * And this interaction is not included in the default interactions.
          */
-        class DragRotateAndZoom extends ol.interaction.Pointer {
+        export class DragRotateAndZoom extends ol.interaction.Pointer {
             constructor(opt_options?: olx.interaction.DragRotateAndZoomOptions);
         }
         /**
@@ -4137,19 +4137,19 @@ export declare namespace ol {
          *
          * To change the style of the box, use CSS and the .ol-dragzoom selector, or your custom one configured with className.
          */
-        class DragZoom extends ol.interaction.DragBox {
+        export class DragZoom extends ol.interaction.DragBox {
             constructor(opt_options?: olx.interaction.DragZoomOptions);
         }
         /**
          * Interaction for drawing feature geometries.
          */
-        class Draw extends ol.interaction.Pointer {
+        export class Draw extends ol.interaction.Pointer {
             constructor(opt_options?: olx.interaction.DrawOptions);
         }
         /**
          * Events emitted by ol.interaction.Draw instances are instances of this type.
          */
-        class DrawEvent extends ol.events.Event {
+        export class DrawEvent extends ol.events.Event {
             /**
              * The feature being drawn.
              */
@@ -4170,7 +4170,7 @@ export declare namespace ol {
          * not a button element event. Although interactions do not have a DOM element,
          * some of them do render vectors and so are visible on the screen.
          */
-        class Interaction extends ol.Object {
+        export class Interaction extends ol.Object {
             constructor (options: olx.interaction.InteractionOptions)
             /**
              * Return whether the interaction is currently active.
@@ -4192,7 +4192,7 @@ export declare namespace ol {
          * document never loses focus but, for any other element, focus will have to be on, and returned to,
          * this element if the keys are to function. See also ol.interaction.KeyboardZoom.
          */
-        class KeyboardPan extends ol.interaction.Interaction {
+        export class KeyboardPan extends ol.interaction.Interaction {
             constructor(opt_options?: olx.interaction.KeyboardPanOptions);
         }
         /**
@@ -4202,31 +4202,31 @@ export declare namespace ol {
          * for any other element, focus will have to be on, and returned to, this element if the keys are to function.
          * See also ol.interaction.KeyboardPan.
          */
-        class KeyboardZoom extends ol.interaction.Interaction {
+        export class KeyboardZoom extends ol.interaction.Interaction {
             constructor(opt_options?: olx.interaction.KeyboardZoomOptions);
         }
         /**
          * Interaction for modifying feature geometries.
          */
-        class Modify extends ol.interaction.Pointer {
+        export class Modify extends ol.interaction.Pointer {
             constructor(opt_options?: olx.interaction.ModifyOptions);
         }
         /**
          * Allows the user to zoom the map by scrolling the mouse wheel.
          */
-        class MouseWheelZoom extends ol.interaction.Interaction {
+        export class MouseWheelZoom extends ol.interaction.Interaction {
             constructor(opt_options?: olx.interaction.MouseWheelZoomOptions);
         }
         /**
          * Allows the user to rotate the map by twisting with two fingers on a touch screen.
          */
-        class PinchRotate extends ol.interaction.Pointer {
+        export class PinchRotate extends ol.interaction.Pointer {
             constructor(opt_options?: olx.interaction.PinchRotateOptions);
         }
         /**
          * Allows the user to zoom the map by pinching with two fingers on a touch screen.
          */
-        class PinchZoom extends ol.interaction.Pointer {
+        export class PinchZoom extends ol.interaction.Pointer {
             constructor(opt_options?: olx.interaction.PinchZoomOptions);
         }
         /**
@@ -4235,7 +4235,7 @@ export declare namespace ol {
          * When the handleDownEvent user function returns true a drag sequence is started. During a drag sequence the handleDragEvent
          * user function is called on move events. The drag sequence ends when the handleUpEvent user function is called and returns false.
          */
-        class Pointer extends ol.interaction.Interaction {
+        export class Pointer extends ol.interaction.Interaction {
             constructor(opt_options?: olx.interaction.PointerOptions);
         }
         /**
@@ -4246,7 +4246,7 @@ export declare namespace ol {
          *
          * Selected features are added to an internal unmanaged layer.
          */
-        class Select extends ol.interaction.Interaction {
+        export class Select extends ol.interaction.Interaction {
             constructor(opt_options?: olx.interaction.SelectOptions);
             /**
              * Returns the associated vectorlayer of the (last) selected feature.
@@ -4261,7 +4261,7 @@ export declare namespace ol {
         /**
          * Events emitted by ol.interaction.Select instances are instances of this type.
          */
-        class SelectEvent extends ol.events.Event {
+        export class SelectEvent extends ol.events.Event {
             /**
              * Deselectd features array.
              */
@@ -4299,7 +4299,7 @@ export declare namespace ol {
          *The snap interaction modifies map browser event coordinate and pixel properties to force the snap to occur
          * to any interaction that them.
          */
-        class Snap extends ol.interaction.Pointer {
+        export class Snap extends ol.interaction.Pointer {
             constructor(opt_options?: olx.interaction.SnapOptions);
         }
         /**
@@ -4308,31 +4308,31 @@ export declare namespace ol {
          * interactions, you will need to create your own ol.interaction.Interaction instances and insert them into a ol.Collection in
          * the order you want before creating your ol.Map instance.
          */
-        function defaults(opts: olx.interaction.DefaultsOptions): ol.Collection<ol.interaction.Interaction>;
+        export function defaults(opts: olx.interaction.DefaultsOptions): ol.Collection<ol.interaction.Interaction>;
         /**
          * Function that takes coordinates and an optional existing geometry as arguments, and returns a geometry.
          * The optional existing geometry is the geometry that is returned when the function is called without a second argument.
          */
-        interface DrawGeometryFunctionType { (coordinates: ol.Coordinate, geom?: ol.geom.Geometry): ol.geom.Geometry; }
+        export interface DrawGeometryFunctionType { (coordinates: ol.Coordinate, geom?: ol.geom.Geometry): ol.geom.Geometry; }
         /**
          * A function that takes an ol.Feature or ol.render.Feature and an ol.layer.Layer and returns true if the feature
          * may be selected or false otherwise.
          */
-        interface SelectFilterFunction { (feature: ol.Feature | ol.render.Feature, layer: ol.layer.Layer): boolean; }
+        export interface SelectFilterFunction { (feature: ol.Feature | ol.render.Feature, layer: ol.layer.Layer): boolean; }
         /**
          * A function that takes a ol.MapBrowserEvent and two ol.Pixels and returns a {boolean}.
          * If the condition is met, true should be returned.
          */
-        interface DragBoxEndConditionType {
+        export interface DragBoxEndConditionType {
             (evt: ol.MapBrowserEvent, startPixel: ol.Pixel, endPixel: ol.Pixel): boolean
         }
     }
 
-    namespace layer {
+    export namespace layer {
         /**
          * Abstract base class; normally only used for creating subclasses and not instantiated in apps. Note that with ol.layer.Base and all its subclasses, any property set in the options is set as a ol.Object property on the layer object, so is observable, and has get/set accessors.
          */
-        class Base extends ol.Object {
+        export class Base extends ol.Object {
 
             /**
              * @constructor
@@ -4452,7 +4452,7 @@ export declare namespace ol {
         /**
          * A ol.Collection of layers that are handled together.
          */
-        class Group extends ol.layer.Base {
+        export class Group extends ol.layer.Base {
 
             /**
              * @constructor
@@ -4476,7 +4476,7 @@ export declare namespace ol {
         /**
          * Layer for rendering vector data as a heatmap. Note that any property set in the options is set as a ol.Object property on the layer object; for example, setting title: 'My Title' in the options means that title is observable, and has get/set accessors.
          */
-        class Heatmap extends ol.layer.Vector {
+        export class Heatmap extends ol.layer.Vector {
 
             /**
              * @constructor
@@ -4524,7 +4524,7 @@ export declare namespace ol {
         /**
          * Server-rendered images that are available for arbitrary extents and resolutions. Note that any property set in the options is set as a ol.Object property on the layer object; for example, setting title: 'My Title' in the options means that title is observable, and has get/set accessors.
          */
-        class Image extends ol.layer.Layer {
+        export class Image extends ol.layer.Layer {
 
             /**
              * @constructor
@@ -4542,7 +4542,7 @@ export declare namespace ol {
         /**
          * Abstract base class; normally only used for creating subclasses and not instantiated in apps. A visual representation of raster or vector map data. Layers group together those properties that pertain to how the data is to be displayed, irrespective of the source of that data.
          */
-        class Layer extends ol.layer.Base {
+        export class Layer extends ol.layer.Base {
 
             /**
              * @constructor
@@ -4566,7 +4566,7 @@ export declare namespace ol {
         /**
          * For layer sources that provide pre-rendered, tiled images in grids that are organized by zoom levels for specific resolutions. Note that any property set in the options is set as a ol.Object property on the layer object; for example, setting title: 'My Title' in the options means that title is observable, and has get/set accessors.
          */
-        class Tile extends ol.layer.Layer {
+        export class Tile extends ol.layer.Layer {
 
             /**
              * @constructor
@@ -4608,7 +4608,7 @@ export declare namespace ol {
         /**
          * Vector data that is rendered client-side. Note that any property set in the options is set as a ol.Object property on the layer object; for example, setting title: 'My Title' in the options means that title is observable, and has get/set accessors.
          */
-        class Vector extends ol.layer.Layer {
+        export class Vector extends ol.layer.Layer {
 
             /**
              * @constructor
@@ -4672,7 +4672,7 @@ export declare namespace ol {
         }
     }
 
-    namespace loadingstrategy {
+    export namespace loadingstrategy {
 
         /**
          * Strategy function for loading all features with a single request.
@@ -4680,7 +4680,7 @@ export declare namespace ol {
          * @param resolution Resolution
          * @returns Extents
          */
-        function all(extent: ol.Extent, resolution: number): Array<ol.Extent>;
+        export function all(extent: ol.Extent, resolution: number): Array<ol.Extent>;
 
         /**
          * Strategy function for loading features based on the view's extent and resolution.
@@ -4688,21 +4688,21 @@ export declare namespace ol {
          * @param resolution Resolution
          * @returns Extents
          */
-        function bbox(extent: ol.Extent, resolution: number): Array<ol.Extent>;
+        export function bbox(extent: ol.Extent, resolution: number): Array<ol.Extent>;
 
         /**
          * Creates a strategy function for loading features based on a tile grid.
          * @param tilegrid Tile grid
          * @returns Loading strategy
          */
-        function tile(tileGrid: ol.tilegrid.TileGrid): ol.LoadingStrategy;
+        export function tile(tileGrid: ol.tilegrid.TileGrid): ol.LoadingStrategy;
     }
 
-    namespace proj {
+    export namespace proj {
 
         // Type definitions
-        interface ProjectionLike extends String { }
-        interface Units extends String { }
+        export interface ProjectionLike extends String { }
+        export interface Units extends String { }
 
         // Methods
 
@@ -4719,33 +4719,33 @@ export declare namespace ol {
          * @param forward The forward transform function (that is, from the source projection to the destination projection) that takes a ol.Coordinate as argument and returns the transformed ol.Coordinate.
          * @param inverse The inverse transform function (that is, from the destination projection to the source projection) that takes a ol.Coordinate as argument and returns the transformed ol.Coordinate.
          */
-        function addCoordinateTransforms(source: ProjectionLike, destination: ProjectionLike, forward: (coordinate: Coordinate) => Coordinate, inverse: (coordinate: Coordinate) => Coordinate): void;
+        export function addCoordinateTransforms(source: ProjectionLike, destination: ProjectionLike, forward: (coordinate: Coordinate) => Coordinate, inverse: (coordinate: Coordinate) => Coordinate): void;
 
         /**
          * Registers transformation functions that don't alter coordinates. Those allow to transform between projections with equal meaning.
          * @param projections Projections.
          */
-        function addEquivalentProjections(projections: Array<Projection>): void;
+        export function addEquivalentProjections(projections: Array<Projection>): void;
 
         /**
          * Add a Projection object to the list of supported projections that can be looked up by their code.
          * @param projection Projection instance.
          */
-        function addProjection(projection: Projection): void;
+        export function addProjection(projection: Projection): void;
 
         /**
          * Transforms a coordinate from longitude/latitude to a different projection.
          * @param coordinate Coordinate as longitude and latitude, i.e. an array with longitude as 1st and latitude as 2nd element.
          * @param projection Target projection. The default is Web Mercator, i.e. 'EPSG:3857'.
          */
-        function fromLonLat(coordinate: Coordinate, opt_projection: ProjectionLike): Coordinate;
+        export function fromLonLat(coordinate: Coordinate, opt_projection: ProjectionLike): Coordinate;
 
         /**
          * Fetches a Projection object for the code specified.
          * @param projectionLike Either a code string which is a combination of authority and identifier such as "EPSG:4326", or an existing projection object, or undefined.
          * @returns Projection object, or null if not in list.
          */
-        function get(projectionLike: ProjectionLike): Projection;
+        export function get(projectionLike: ProjectionLike): Projection;
 
         /**
          * Given the projection-like objects, searches for a transformation function to convert a coordinates array from the source projection to the destination projection.
@@ -4753,7 +4753,7 @@ export declare namespace ol {
          * @param destination Destination.
          * @returns Transform function.
          */
-        function getTransform(source: ProjectionLike, destination: ProjectionLike): ol.TransformFunction;
+        export function getTransform(source: ProjectionLike, destination: ProjectionLike): ol.TransformFunction;
 
         /**
          * Transforms a coordinate to longitude/latitude.
@@ -4761,7 +4761,7 @@ export declare namespace ol {
          * @param projection Projection of the coordinate. The default is Web Mercator, i.e. 'EPSG:3857'.
          * @returns Coordinate as longitude and latitude, i.e. an array with longitude as 1st and latitude as 2nd element.
          */
-        function toLonLat(coordinate: Coordinate, projection: ProjectionLike): Coordinate;
+        export function toLonLat(coordinate: Coordinate, projection: ProjectionLike): Coordinate;
 
         /**
          * Transforms a coordinate from source projection to destination projection. This returns a new coordinate (and does not modify the original).
@@ -4770,7 +4770,7 @@ export declare namespace ol {
          * @param destination Destination projection-like.
          * @returns Coordinate.
          */
-        function transform(coordinate: Coordinate, source: ProjectionLike, destination: ProjectionLike): Coordinate;
+        export function transform(coordinate: Coordinate, source: ProjectionLike, destination: ProjectionLike): Coordinate;
 
         /**
          * Transforms an extent from source projection to destination projection. This returns a new extent (and does not modify the original).
@@ -4779,9 +4779,9 @@ export declare namespace ol {
          * @param destination Destination projection-like.
          * @returns The transformed extent.
          */
-        function transformExtent(extent: Extent, source: ProjectionLike, destination: ProjectionLike): Extent;
+        export function transformExtent(extent: Extent, source: ProjectionLike, destination: ProjectionLike): Extent;
 
-        class Projection {
+        export class Projection {
             constructor(options: olx.Projection);
 
             getExtent(): Extent;
@@ -4794,73 +4794,73 @@ export declare namespace ol {
         }
     }
 
-    namespace render {
+    export namespace render {
 
-        class Event extends ol.events.Event {
+        export class Event extends ol.events.Event {
         }
 
-        class VectorContext {
+        export class VectorContext {
         }
-        class Feature {
+        export class Feature {
             get(key: string): any;
             getExtent(): ol.Extent;
             getGeometry(): ol.geom.Geometry;
             getProperties: Object[];
             getType(): ol.geom.GeometryType;
         }
-        namespace canvas {
-            class Immediate {
+        export namespace canvas {
+            export class Immediate {
             }
         }
     }
 
-    namespace source {
+    export namespace source {
 
-        class BingMaps extends TileImage {
+        export class BingMaps extends TileImage {
         }
 
-        class CartoDB extends XYZ {
+        export class CartoDB extends XYZ {
         }
 
-        class Cluster extends Vector {
+        export class Cluster extends Vector {
             constructor(options: olx.source.ClusterOptions);
         }
 
-        class Image extends Source {
+        export class Image extends Source {
         }
 
-        class ImageArcGISRest extends Image {
+        export class ImageArcGISRest extends Image {
         }
 
-        class ImageCanvas extends Image {
+        export class ImageCanvas extends Image {
         }
 
-        class ImageEvent extends ol.events.Event {
+        export class ImageEvent extends ol.events.Event {
         }
 
-        class ImageMapGuide extends Image {
+        export class ImageMapGuide extends Image {
         }
 
-        class ImageStatic extends ol.source.Image {
+        export class ImageStatic extends ol.source.Image {
         	constructor(options?: olx.StaticImageOptions);
         }
 
-        class ImageVector extends ImageCanvas {
+        export class ImageVector extends ImageCanvas {
         }
 
-        class ImageWMS extends Image {
+        export class ImageWMS extends Image {
             constructor(options: olx.ImageWMSOptions);
         }
 
-        class MapQuest extends XYZ {
+        export class MapQuest extends XYZ {
             constructor(options: any);
         }
 
-        class OSM extends XYZ {
+        export class OSM extends XYZ {
             constructor(opt_options?: olx.OSMOptions);
         }
 
-        class Source extends ol.Object {
+        export class Source extends ol.Object {
 
             constructor(options: any);
 
@@ -4876,31 +4876,31 @@ export declare namespace ol {
             refresh(): void;
         }
 
-        class Stamen extends XYZ {
+        export class Stamen extends XYZ {
         }
 
-        class Tile extends Source {
+        export class Tile extends Source {
         }
 
-        class TileArcGISRest extends TileImage {
+        export class TileArcGISRest extends TileImage {
         }
 
-        class TileDebug extends Tile {
+        export class TileDebug extends Tile {
         }
 
-        class TileEvent extends ol.events.Event {
+        export class TileEvent extends ol.events.Event {
         }
 
-        class TileImage extends UrlTile {
+        export class TileImage extends UrlTile {
         }
 
-        class TileJSON extends TileImage {
+        export class TileJSON extends TileImage {
         }
 
-        class TileUTFGrid extends Tile {
+        export class TileUTFGrid extends Tile {
         }
 
-        class TileWMS extends TileImage {
+        export class TileWMS extends TileImage {
             constructor(options: olx.TileWMSOptions);
 
             /**
@@ -4929,10 +4929,10 @@ export declare namespace ol {
             getGetFeatureInfoUrl(coordinate: ol.Coordinate, resolution: number, projection: ol.proj.ProjectionLike, params: {}): string;
         }
 
-        class UrlTile extends Tile {
+        export class UrlTile extends Tile {
         }
 
-        class Vector extends Source {
+        export class Vector extends Source {
             constructor(opts?: olx.source.VectorOptions)
             /**
              * Add a single feature to the source. If you want to add a batch of features at once,
@@ -4973,45 +4973,45 @@ export declare namespace ol {
             getFeaturesAtCoordinate(coordinate: ol.Coordinate): ol.Feature[];
         }
 
-        class VectorEvent extends ol.events.Event {
+        export class VectorEvent extends ol.events.Event {
         }
 
-        class VectorTile extends UrlTile {
+        export class VectorTile extends UrlTile {
         }
 
-        class WMTS extends TileImage {
+        export class WMTS extends TileImage {
             constructor(options: olx.source.WMTSOptions);
         }
 
-        class XYZ extends TileImage {
+        export class XYZ extends TileImage {
         }
 
-        class Zoomify extends TileImage {
+        export class Zoomify extends TileImage {
         }
 
         // Namespaces
-        namespace wms {
-            interface ServerType extends String { }
+        export namespace wms {
+            export interface ServerType extends String { }
         }
 
         // Type definitions
-        interface State extends String { }
-        interface WMTSRequestEncoding extends String { }
+        export interface State extends String { }
+        export interface WMTSRequestEncoding extends String { }
     }
 
-    namespace style {
+    export namespace style {
 
-        class AtlasManager {
+        export class AtlasManager {
         }
 
-        class Circle extends Image {
+        export class Circle extends Image {
             constructor(opt_options?: olx.style.CircleOptions);
         }
 
         /**
          * Set fill style for vector features.
          */
-        class Fill {
+        export class Fill {
 
             constructor(opt_options?: olx.style.FillOptions);
 
@@ -5025,11 +5025,11 @@ export declare namespace ol {
             getChecksum(): string;
         }
 
-        class Icon extends Image {
+        export class Icon extends Image {
             constructor(option: olx.style.IconOptions)
         }
 
-        class Image {
+        export class Image {
             getOpacity(): number;
             getRotateWithView(): boolean;
             getRotation(): number;
@@ -5041,14 +5041,14 @@ export declare namespace ol {
             setScale(scale: number): void;
         }
 
-        interface GeometryFunction {
+        export interface GeometryFunction {
             (feature: Feature): ol.geom.Geometry
         }
 
-        class RegularShape {
+        export class RegularShape {
         }
 
-        class Stroke {
+        export class Stroke {
             constructor(opts?: olx.style.StrokeOptions);
             getColor(): ol.Color | string;
             getLineCap(): string;
@@ -5069,7 +5069,7 @@ export declare namespace ol {
          * or its children through `set*()` methods will not take effect until the
          * feature, layer or FeatureOverlay that uses the style is re-rendered.
          */
-        class Style {
+        export class Style {
             constructor(opts: olx.style.StyleOptions);
 
             getFill(): ol.style.Fill;
@@ -5092,7 +5092,7 @@ export declare namespace ol {
         /**
          * Set text style for vector features.
          */
-        class Text {
+        export class Text {
             constructor(opt?: olx.style.TextOptions);
 
             getFont(): string;
@@ -5161,15 +5161,15 @@ export declare namespace ol {
         /**
          * A function that takes an ol.Feature and a {number} representing the view's resolution. The function should return an array of ol.style.Style. This way e.g. a vector layer can be styled.
          */
-        interface StyleFunction { (feature: ol.Feature, resolution: number): ol.style.Style }
+        export interface StyleFunction { (feature: ol.Feature, resolution: number): ol.style.Style }
     }
 
-    namespace tilegrid {
+    export namespace tilegrid {
 
         /**
          * Base class for setting the grid pattern for sources accessing tiled-image servers.
          */
-        class TileGrid {
+        export class TileGrid {
 
             /**
              * @constructor
@@ -5243,7 +5243,7 @@ export declare namespace ol {
         /**
          * Set the grid pattern for sources accessing WMTS tiled-image servers.
          */
-        class WMTS extends TileGrid {
+        export class WMTS extends TileGrid {
 
             /**
              * @constructor
@@ -5269,7 +5269,7 @@ export declare namespace ol {
         /**
          * Set the grid pattern for sources accessing Zoomify tiled-image servers.
          */
-        class Zoomify extends TileGrid {
+        export class Zoomify extends TileGrid {
 
             /**
              * @constructor
@@ -5283,12 +5283,12 @@ export declare namespace ol {
          * @param options Tile grid options.
          * @returns The grid instance
          */
-        function createXYZ(options?: olx.tilegrid.XYZOptions): ol.tilegrid.TileGrid;
+        export function createXYZ(options?: olx.tilegrid.XYZOptions): ol.tilegrid.TileGrid;
     }
 
-    namespace webgl {
+    export namespace webgl {
 
-        class Context {
+        export class Context {
 
             /**
              * @constructor
@@ -5323,78 +5323,78 @@ export declare namespace ol {
     /**
      * A function returning the canvas element ({HTMLCanvasElement}) used by the source as an image. The arguments passed to the function are: ol.Extent the image extent, {number} the image resolution, {number} the device pixel ratio, ol.Size the image size, and ol.proj.Projection the image projection. The canvas returned by this function is cached by the source. The this keyword inside the function references the ol.source.ImageCanvas.
      */
-    function CanvasFunctionType(extent: Extent, resolution: number, pixelRatio: number, size: Size, projection: proj.Projection): HTMLCanvasElement;
+    export function CanvasFunctionType(extent: Extent, resolution: number, pixelRatio: number, size: Size, projection: proj.Projection): HTMLCanvasElement;
 
     /**
      * A color represented as a short array [red, green, blue, alpha]. red, green, and blue should be integers in the range 0..255 inclusive. alpha should be a float in the range 0..1 inclusive.
      */
-    interface Color extends Array<number> { }
+    export interface Color extends Array<number> { }
 
     /**
      * An array of numbers representing an xy coordinate. Example: [16, 48].
      */
-    interface Coordinate extends Array<number> { }
+    export interface Coordinate extends Array<number> { }
 
     /**
      * An array of numbers representing an extent: [minx, miny, maxx, maxy].
      */
-    interface Extent extends Array<number> { }
+    export interface Extent extends Array<number> { }
 
     /**
      * Overlay position: 'bottom-left', 'bottom-center', 'bottom-right', 'center-left', 'center-center', 'center-right', 'top-left', 'top-center', 'top-right'
      */
-    interface OverlayPositioning extends String { }
+    export interface OverlayPositioning extends String { }
 
     /**
      * An array with two elements, representing a pixel. The first element is the x-coordinate, the second the y-coordinate of the pixel.
      */
-    interface Pixel extends Array<number> { }
+    export interface Pixel extends Array<number> { }
 
     /**
      * Available renderers: 'canvas', 'dom' or 'webgl'.
      */
-    interface RendererType extends String { }
+    export interface RendererType extends String { }
 
     /**
      * An array of numbers representing a size: [width, height].
      */
-    interface Size extends Array<number> { }
+    export interface Size extends Array<number> { }
 
     /**
      * An array of three numbers representing the location of a tile in a tile grid. The order is z, x, and y. z is the zoom level.
      */
-    interface TileCoord extends Array<number> { }
+    export interface TileCoord extends Array<number> { }
 
     // Functions
 
     /**
      * A function that takes a ol.Coordinate and transforms it into a {string}.
      */
-    interface CoordinateFormatType { (coordinate?: Coordinate): string; }
+    export interface CoordinateFormatType { (coordinate?: Coordinate): string; }
 
     /**
      * Implementation based on the code of OpenLayers, no documentation available (yet). If it is incorrect, please create an issue and I will change it.
      */
-    interface FeatureLoader { (extent: ol.Extent, number: number, projection: ol.proj.Projection): string }
+    export interface FeatureLoader { (extent: ol.Extent, number: number, projection: ol.proj.Projection): string }
 
     /**
      * A function that returns a style given a resolution. The this keyword inside the function references the ol.Feature to be styled.
      */
-    interface FeatureStyleFunction { (resolution: number): ol.style.Style }
+    export interface FeatureStyleFunction { (resolution: number): ol.style.Style }
 
     /**
      * Loading strategy
      */
-    interface LoadingStrategy { (extent: ol.Extent, resolution: number): Array<ol.Extent> }
+    export interface LoadingStrategy { (extent: ol.Extent, resolution: number): Array<ol.Extent> }
 
     /**
      * Function to perform manipulations before rendering. This function is called with the ol.Map as first and an optional olx.FrameState as second argument. Return true to keep this function for the next frame, false to remove it.
      */
-    interface PreRenderFunction { (map: ol.Map, frameState?: olx.FrameState): boolean }
+    export interface PreRenderFunction { (map: ol.Map, frameState?: olx.FrameState): boolean }
 
     /**
      * A transform function accepts an array of input coordinate values, an optional output array, and an optional dimension (default should be 2). The function transforms the input coordinate values, populates the output array, and returns the output array.
      */
-    interface TransformFunction { (input: Array<number>, output?: Array<number>, dimension?: number): Array<number> }
+    export interface TransformFunction { (input: Array<number>, output?: Array<number>, dimension?: number): Array<number> }
 }
 
