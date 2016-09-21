@@ -1504,18 +1504,18 @@ declare namespace olx {
 /**
  * A high-performance, feature-packed library for all your mapping needs.
  */
-declare namespace ol {
+export declare namespace ol {
 
-    interface TileLoadFunctionType { (image: ol.Image, url: string): void }
+    export interface TileLoadFunctionType { (image: ol.Image, url: string): void }
 
-    interface ImageLoadFunctionType { (image: ol.Image, url: string): void }
+    export interface ImageLoadFunctionType { (image: ol.Image, url: string): void }
 
     type AttributionLike = string | Array<string> | ol.Attribution | Array<ol.Attribution>
 
     /**
      * An attribution for a layer source.
      */
-    class Attribution {
+    export class Attribution {
         /**
          * @constructor
          * @param options Attribution options.
@@ -5398,6 +5398,3 @@ declare namespace ol {
     interface TransformFunction { (input: Array<number>, output?: Array<number>, dimension?: number): Array<number> }
 }
 
-declare module "openlayers" {
-    export default ol;
-}
