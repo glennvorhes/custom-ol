@@ -1759,19 +1759,9 @@ export declare namespace ol {
          * Set the style for the feature. This can be a single style object, an array of styles, or a function that takes a resolution and returns an array of styles. If it is null the feature has no style (a null style).
          * @param style Style for this feature.
          */
-        setStyle(style: ol.style.Style): void;
+        setStyle(style: ol.style.Style|Array<ol.style.Style>|ol.FeatureStyleFunction): void;
 
-        /**
-         * Set the style for the feature. This can be a single style object, an array of styles, or a function that takes a resolution and returns an array of styles. If it is null the feature has no style (a null style).
-         * @param style Style for this feature.
-         */
-        setStyle(style: Array<ol.style.Style>): void;
 
-        /**
-         * Set the style for the feature. This can be a single style object, an array of styles, or a function that takes a resolution and returns an array of styles. If it is null the feature has no style (a null style).
-         * @param style Style for this feature.
-         */
-        setStyle(style: ol.FeatureStyleFunction): void;
     }
 
     /**
@@ -1837,19 +1827,8 @@ export declare namespace ol {
          * Set the style for features. This can be a single style object, an array of styles, or a function that takes a feature and resolution and returns an array of styles.
          * @param style Overlay style
          */
-        setStyle(style: ol.style.Style): void;
+        setStyle(style: ol.style.Style|Array<ol.style.Style>|ol.style.StyleFunction): void;
 
-        /**
-         * Set the style for features. This can be a single style object, an array of styles, or a function that takes a feature and resolution and returns an array of styles.
-         * @param style Overlay style
-         */
-        setStyle(style: Array<ol.style.Style>): void;
-
-        /**
-         * Set the style for features. This can be a single style object, an array of styles, or a function that takes a feature and resolution and returns an array of styles.
-         * @param style Overlay style
-         */
-        setStyle(style: ol.style.StyleFunction): void;
     }
 
     /**
@@ -4635,26 +4614,9 @@ export declare namespace ol {
 
             /**
              * Set the style for features. This can be a single style object, an array of styles, or a function that takes a feature and resolution and returns an array of styles. If it is undefined the default style is used. If it is null the layer has no style (a null style), so only features that have their own styles will be rendered in the layer. See ol.style for information on the default style.
+             * @param style Layer style
              */
-            setStyle(): void;
-
-            /**
-             * Set the style for features. This can be a single style object, an array of styles, or a function that takes a feature and resolution and returns an array of styles. If it is undefined the default style is used. If it is null the layer has no style (a null style), so only features that have their own styles will be rendered in the layer. See ol.style for information on the default style.
-             * @param layer Layer style
-             */
-            setStyle(style: ol.style.Style): void;
-
-            /**
-             * Set the style for features. This can be a single style object, an array of styles, or a function that takes a feature and resolution and returns an array of styles. If it is undefined the default style is used. If it is null the layer has no style (a null style), so only features that have their own styles will be rendered in the layer. See ol.style for information on the default style.
-             * @param layer Layer style
-             */
-            setStyle(style: Array<ol.style.Style>): void;
-
-            /**
-             * Set the style for features. This can be a single style object, an array of styles, or a function that takes a feature and resolution and returns an array of styles. If it is undefined the default style is used. If it is null the layer has no style (a null style), so only features that have their own styles will be rendered in the layer. See ol.style for information on the default style.
-             * @param Layer style
-             */
-            setStyle(style: ol.style.StyleFunction): void;
+            setStyle(style: ol.style.Style|Array<ol.style.Style>|ol.style.StyleFunction): void;
 
             /**
              * Sets the layer to be rendered on top of other layers on a map. The map will not manage this layer
@@ -4692,7 +4654,7 @@ export declare namespace ol {
 
         /**
          * Creates a strategy function for loading features based on a tile grid.
-         * @param tilegrid Tile grid
+         * @param tileGrid Tile grid
          * @returns Loading strategy
          */
         export function tile(tileGrid: ol.tilegrid.TileGrid): ol.LoadingStrategy;
