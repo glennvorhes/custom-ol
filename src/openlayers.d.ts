@@ -2199,7 +2199,7 @@ declare namespace ol {
          * Get the view associated with this map. A view manages properties such as center and resolution.
          * @returns The view that controls this map.
          */
-        getView(): ol.View;
+        getView(): View;
 
         /**
          * Get the element that serves as the map viewport.
@@ -4812,6 +4812,11 @@ declare namespace ol {
              * @param extent The new extent of the projection.
              */
             setExtent(extent: Extent): void;
+
+            /**
+             * Get the string representation of the EPSG code
+             */
+            getCode(): string;
         }
     }
 

@@ -5,7 +5,7 @@ helper to change ambient reference to d.ts that describes the custom ol package
 
 def prepend_export(input_string):
     """
-    prepend ol namespace and all interfaces, types, functions, classes and namepsaces with export
+    prepend ol namespace and all interfaces, types, functions, classes and namespaces with export
 
     :param input_string:
     :type input_string: str
