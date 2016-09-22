@@ -1,13 +1,11 @@
-
-input_lines = []
 """
-:type: list{str]
+helper to change ambient reference to d.ts that describes the custom ol package
 """
 
 
 def prepend_export(input_string):
     """
-
+    prepend ol namespace and all interfaces, types, functions, classes and namepsaces with export
 
     :param input_string:
     :type input_string: str
@@ -27,23 +25,25 @@ def prepend_export(input_string):
 
     return input_string
 
+input_lines = []
+"""
+:type: list{str]
+"""
+
 
 with open(r'openlayers.d.ts', 'r') as original:
     while True:
-
         ln = original.readline().replace('\n', '')
 
         if ln.find('declare module') > -1:
             break
 
-        # print(ln)
         input_lines.append(ln + '\n')
 
-
+# flag to add exports after ol namespace is founc
 add_exports = False
 
 for i in range(len(input_lines)):
-
     if not add_exports:
         add_exports = input_lines[i].find('namespace ol ') > -1
 
@@ -66,22 +66,5 @@ olx_lines.append('declare module "openlayers" {\n')
 olx_lines.append('    export = olx;\n')
 olx_lines.append('}\n')
 
-
-
-
-
-
 with open(r'..\ol\openlayers-olx.d.ts', 'w') as out_file:
     out_file.writelines(olx_lines)
-
-
-
-
-
-# declare module "openlayers" {
-#     export = ol;
-# }
-
-
-
-# print(input_lines)

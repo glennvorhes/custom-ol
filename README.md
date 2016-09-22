@@ -1,4 +1,4 @@
-Custom Build of openlayers
+**Custom Build of OpenLayers**
 
 Modified openlayers.d.ts file for ready use as typescript import
 
