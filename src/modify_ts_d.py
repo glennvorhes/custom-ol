@@ -18,10 +18,10 @@ def prepend_export(input_string):
     :type: list[str]
     """
 
-    for cand in candidates:
-        if input_string.find(cand) > -1:
-            short_cand = cand.strip()
-            return input_string.replace(short_cand, 'export ' + short_cand)
+    for candidate in candidates:
+        if input_string.find(candidate) > -1:
+            short_candidate = candidate.strip()
+            return input_string.replace(short_candidate, 'export ' + short_candidate)
 
     return input_string
 

@@ -2199,7 +2199,7 @@ export declare namespace ol {
          * Get the view associated with this map. A view manages properties such as center and resolution.
          * @returns The view that controls this map.
          */
-        getView(): View;
+        getView(): ol.View;
 
         /**
          * Get the element that serves as the map viewport.
