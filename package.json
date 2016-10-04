@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "smaller custom openlayers build",
   "main": "./lib/index.js",
-  "typings": "./lib/index.d.ts",
   "files": [
     "lib"
 
