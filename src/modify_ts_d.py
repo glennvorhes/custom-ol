@@ -52,3 +52,4 @@ for i in range(len(input_lines)):
 
 with open(output_file, 'w') as out_file:
     out_file.writelines(input_lines)
+
