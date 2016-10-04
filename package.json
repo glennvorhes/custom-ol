@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "smaller custom openlayers build",
   "main": "./lib/index.js",
-  "typings": "./ol/openlayers-npm.d.ts",
+  "typings": "./lib/index.d.ts",
   "files": [
     "lib",
     "ol"
@@ -28,5 +28,5 @@
   "devDependencies": {
     "@types/node": "^6.0.42",
     "openlayers": "^3.18.2"
-  }N55qUuf8yp
+  }
 }
