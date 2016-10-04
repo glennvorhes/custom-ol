@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ol": "node node_modules/openlayers/tasks/build.js ol/ol-config.json ol/ol-build.js",
+    "ol": "node node_modules/openlayers/tasks/build.js src/ol-config.json lib/index.js",
     "tsc": "tsc -w",
     "server": "C:\\Python33\\python.exe -m http.server 5001",
     "update-types": "C:\\Python33\\python.exe src\\modify_ts_d.py"
@@ -28,5 +28,5 @@
   "devDependencies": {
     "@types/node": "^6.0.42",
     "openlayers": "^3.18.2"
-  }
+  }N55qUuf8yp
 }
