@@ -26,18 +26,28 @@ with open(openlayers_types, 'r') as original:
 
         input_lines.append(ln + '\n')
 
-did_replace = False
-declare_module = 'declare module ol'
+declare_module_ol = 'declare module ol'
+declare_module_olx = 'declare module olx'
 export_module = 'export module ol'
+
+prefix = '   '
+suffix = ' '
+candidates = ["module", "interface", "function", "class"]
+candidates_replace = ['export ' + c for c in candidates]
+candidates = [prefix + c + suffix for c in candidates]
+candidates_replace = [prefix + c + suffix for c in candidates_replace]
 
 for i in range(len(input_lines)):
 
-    if did_replace:
-        continue
+    if input_lines[i].find(declare_module_ol) > -1:
+        input_lines[i] = input_lines[i].replace(declare_module_ol, export_module)
 
-    if input_lines[i].find(declare_module) > -1:
-        input_lines[i] = input_lines[i].replace(declare_module, export_module)
-        did_replace = True
+    if input_lines[i].find(declare_module_olx) > -1:
+        break
+
+    for j in range(len(candidates)):
+        if input_lines[i].find(candidates[j]):
+            input_lines[i] = input_lines[i].replace(candidates[j], candidates_replace[j])
 
 
 with open(output_file, 'w') as out_file:
