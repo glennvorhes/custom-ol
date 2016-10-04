@@ -42,19 +42,3 @@ for i in range(len(input_lines)):
 
 with open(output_file, 'w') as out_file:
     out_file.writelines(input_lines)
-
-#
-# olx_lines = []
-#
-# for i in range(len(input_lines)):
-#     if input_lines[i].find('namespace ol ') > -1:
-#         break
-#
-#     olx_lines.append(input_lines[i])
-#
-# olx_lines.append('declare module "openlayers" {\n')
-# olx_lines.append('    export = olx;\n')
-# olx_lines.append('}\n')
-#
-# with open(r'..\ol\openlayers-olx.d.ts', 'w') as out_file:
-#     out_file.writelines(olx_lines)
