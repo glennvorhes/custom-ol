@@ -2,6 +2,25 @@
 helper to change ambient reference to d.ts that describes the custom ol package
 """
 
+import os
+
+print(__file__)
+print(os.path.dirname(__file__))
+
+openlayers_types = os.path.join(
+    os.path.dirname(__file__), os.pardir,
+    'DefinitelyTyped', 'openlayers', 'openlayers.d.ts')
+
+output_file = os.path.join(
+    os.path.dirname(__file__), os.pardir,
+    'lib', 'openlayers-npm.d.ts')
+
+print(openlayers_types)
+print(os.path.isdir(openlayers_types))
+print(os.path.isfile(openlayers_types))
+
+# exit()
+
 
 def prepend_export(input_string):
     """
@@ -31,7 +50,7 @@ input_lines = []
 """
 
 
-with open(r'openlayers.d.ts', 'r') as original:
+with open(openlayers_types, 'r') as original:
     while True:
         ln = original.readline().replace('\n', '')
 
@@ -50,21 +69,21 @@ for i in range(len(input_lines)):
     if add_exports:
         input_lines[i] = prepend_export(input_lines[i])
 
-with open(r'..\ol\openlayers-npm.d.ts', 'w') as out_file:
+with open(output_file, 'w') as out_file:
     out_file.writelines(input_lines)
 
-
-olx_lines = []
-
-for i in range(len(input_lines)):
-    if input_lines[i].find('namespace ol ') > -1:
-        break
-
-    olx_lines.append(input_lines[i])
-
-olx_lines.append('declare module "openlayers" {\n')
-olx_lines.append('    export = olx;\n')
-olx_lines.append('}\n')
-
-with open(r'..\ol\openlayers-olx.d.ts', 'w') as out_file:
-    out_file.writelines(olx_lines)
+#
+# olx_lines = []
+#
+# for i in range(len(input_lines)):
+#     if input_lines[i].find('namespace ol ') > -1:
+#         break
+#
+#     olx_lines.append(input_lines[i])
+#
+# olx_lines.append('declare module "openlayers" {\n')
+# olx_lines.append('    export = olx;\n')
+# olx_lines.append('}\n')
+#
+# with open(r'..\ol\openlayers-olx.d.ts', 'w') as out_file:
+#     out_file.writelines(olx_lines)
