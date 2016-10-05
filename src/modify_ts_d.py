@@ -39,15 +39,17 @@ candidates_replace = [prefix + c + suffix for c in candidates_replace]
 
 for i in range(len(input_lines)):
 
-    if input_lines[i].find(declare_module_ol) > -1:
-        input_lines[i] = input_lines[i].replace(declare_module_ol, export_module)
+    input_lines[i] = input_lines[i].replace('declare module ', 'export declare module ')
+
+    # if input_lines[i].find(declare_module_ol) > -1:
+    #     input_lines[i] = input_lines[i].replace(declare_module_ol, export_module)
 
     # if input_lines[i].find('@namespace olx') > -1:
     #     break
     #
-    # for j in range(len(candidates)):
-    #     if input_lines[i].find(candidates[j]):
-    #         input_lines[i] = input_lines[i].replace(candidates[j], candidates_replace[j])
+    for j in range(len(candidates)):
+        if input_lines[i].find(candidates[j]):
+            input_lines[i] = input_lines[i].replace(candidates[j], candidates_replace[j])
     #
     # input_lines[i] = input_lines[i].replace('export module', 'export namespace')
 
