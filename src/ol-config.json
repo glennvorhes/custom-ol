@@ -104,7 +104,8 @@
     "ol.interaction.Draw",
     "ol.interaction.Draw#on",
     "ol.animation.pan",
-    "ol.control.FullScreen"
+    "ol.control.FullScreen",
+    "ol.easing.inAndOut"
   ],
   "compile": {
     "externs": [
