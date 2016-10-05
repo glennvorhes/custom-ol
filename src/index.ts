@@ -1,1 +1,1 @@
-import {ol} from '../ol/ol-build'
+export const ol = require('../ol/ol-build')
