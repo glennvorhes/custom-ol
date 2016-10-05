@@ -13087,7 +13087,7 @@ export declare module olx {
             params?: { [k: string]: any };
             logo?: (string | olx.LogoOptions);
             tileGrid?: ol.tilegrid.TileGrid;
-            projection: ol.ProjectionLike;
+            projection?: ol.ProjectionLike;
             reprojectionErrorThreshold?: number;
             tileLoadFunction?: ol.TileLoadFunctionType;
             url?: string;
