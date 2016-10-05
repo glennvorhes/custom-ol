@@ -6366,7 +6366,7 @@ export declare module ol {
              * @api stable
              */
             getSource(): ol.source.Vector;
-       
+
             /**
              * Get the style for features.  This returns whatever was passed to the `style`
              * option at construction or to the `setStyle` method.
@@ -12619,7 +12619,7 @@ export declare module olx {
          *     visible: (boolean|undefined)}}
          */
         export interface VectorOptions {
-            renderOrder: (feature1: ol.Feature, feature2: ol.Feature) => number;
+            renderOrder?: (feature1: ol.Feature, feature2: ol.Feature) => number;
             map?: ol.Map;
             extent?: ol.Extent;
             minResolution?: number;
