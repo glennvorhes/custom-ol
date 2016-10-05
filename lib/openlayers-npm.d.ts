@@ -68,7 +68,7 @@ declare module ol {
       * @implements {oli.AssertionError}
       * @param {number} code Error code.
       */
-    class AssertionError extends Error {
+    export class AssertionError extends Error {
         /**
          * Error object thrown when an assertion failed. This is an ECMA-262 Error,
          * extended with a `code` property.
