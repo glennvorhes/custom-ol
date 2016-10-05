@@ -11675,7 +11675,7 @@ export declare module ol {
 /**
  * @namespace olx
  */
-declare module olx {
+export declare module olx {
 
     /**
      * @namespace olx.animation
