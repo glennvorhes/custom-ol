@@ -32,7 +32,7 @@ export_module = 'export module ol'
 
 prefix = '   '
 suffix = ' '
-candidates = ["module", "interface", "function", "class"]
+candidates = ["module", "interface", "function", "class", "type"]
 candidates_replace = ['export ' + c for c in candidates]
 candidates = [prefix + c + suffix for c in candidates]
 candidates_replace = [prefix + c + suffix for c in candidates_replace]
@@ -40,6 +40,7 @@ candidates_replace = [prefix + c + suffix for c in candidates_replace]
 for i in range(len(input_lines)):
 
     input_lines[i] = input_lines[i].replace('declare module ', 'export declare module ')
+    input_lines[i] = input_lines[i].replace('declare type ', 'export declare type ')
 
     # if input_lines[i].find(declare_module_ol) > -1:
     #     input_lines[i] = input_lines[i].replace(declare_module_ol, export_module)

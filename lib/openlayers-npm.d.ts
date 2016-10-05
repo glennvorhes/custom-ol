@@ -4,7 +4,7 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // Definitions partially generated using tsd-jsdoc (https://github.com/englercj/tsd-jsdoc)
 
-declare type GlobalObject = Object;
+export declare type GlobalObject = Object;
 
 /**
  * @namespace ol
@@ -284,7 +284,7 @@ export declare module ol {
 
     export module Collection {
 
-        type EventType = string;
+        export type EventType = string;
 
         /**
           * @classdesc
@@ -820,14 +820,14 @@ export declare module ol {
              * @enum {string}
              * @api
              */
-            type Property = string;
+            export type Property = string;
 
             /**
             * Units for the scale line. Supported values are `'degrees'`, `'imperial'`,
             * `'nautical'`, `'metric'`, `'us'`.
             * @enum {string}
             */
-            type Units = string;
+            export type Units = string;
         }
 
         /**
@@ -2100,7 +2100,7 @@ export declare module ol {
 
         }
 
-        type EsriJSONGeometry = JSON;
+        export type EsriJSONGeometry = JSON;
 
         /**
          * @classdesc
@@ -2131,10 +2131,10 @@ export declare module ol {
 
         }
 
-        type GeoJSONFeature = JSON;
-        type GeoJSONFeatureCollection = JSON;
-        type GeoJSONGeometry = JSON;
-        type GeoJSONGeometryCollection = JSON;
+        export type GeoJSONFeature = JSON;
+        export type GeoJSONFeatureCollection = JSON;
+        export type GeoJSONGeometry = JSON;
+        export type GeoJSONGeometryCollection = JSON;
 
         /**
          * @classdesc
@@ -2535,7 +2535,7 @@ export declare module ol {
          * IGC altitude/z. One of 'barometric', 'gps', 'none'.
          * @enum {string}
          */
-        type IGCZ = string;
+        export type IGCZ = string;
 
         /**
          * @classdesc
@@ -3608,7 +3608,7 @@ export declare module ol {
          * `'GeometryCollection'`, `'Circle'`.
          * @enum {string}
          */
-        type GeometryType = string;
+        export type GeometryType = string;
 
         /**
          * The coordinate layout for geometries, indicating whether a 3rd or 4th z ('Z')
@@ -3616,7 +3616,7 @@ export declare module ol {
          * `'XYZ'`, `'XYM'`, `'XYZM'`.
          * @enum {string}
          */
-        type GeometryLayout = string;
+        export type GeometryLayout = string;
 
         /**
          * @classdesc
@@ -4701,7 +4701,7 @@ export declare module ol {
 
     }
 
-    type ImageState = number;
+    export type ImageState = number;
 
     /**
      * @constructor
@@ -4925,7 +4925,7 @@ export declare module ol {
 
         }
 
-        type DragAndDropEventType = string;
+        export type DragAndDropEventType = string;
 
         /**
          * @classdesc
@@ -5129,7 +5129,7 @@ export declare module ol {
 
         }
 
-        type DrawEventType = string;
+        export type DrawEventType = string;
 
         /**
          * @classdesc
@@ -5837,7 +5837,7 @@ export declare module ol {
 
         }
 
-        type TranslateEventType = string;
+        export type TranslateEventType = string;
 
         /**
          * @classdesc
@@ -6411,7 +6411,7 @@ export declare module ol {
          *    even during animations, but slower performance than the other options.
          * @api
          */
-        type VectorTileRenderType = string;
+        export type VectorTileRenderType = string;
 
         /**
          * @classdesc
@@ -7380,7 +7380,7 @@ export declare module ol {
      * `'top-center'`, `'top-right'`
      * @enum {string}
      */
-    type OverlayPositioning = string;
+    export type OverlayPositioning = string;
 
     /**
      * @classdesc
@@ -7602,7 +7602,7 @@ export declare module ol {
          * `'us-ft'`.
          * @enum {string}
          */
-        type Units = string;
+        export type Units = string;
 
         /**
          * Meters per unit lookup table.
@@ -8052,7 +8052,7 @@ export declare module ol {
 
         }
 
-        type EventType = string;
+        export type EventType = string;
 
         /**
          * Lightweight, read-only, {@link ol.Feature} and {@link ol.geom.Geometry} like
@@ -8166,13 +8166,13 @@ export declare module ol {
      * Available renderers: `'canvas'`, `'dom'` or `'webgl'`.
      * @enum {string}
      */
-    type RendererType = string;
+    export type RendererType = string;
 
     /**
      * Raster operation type. Supported values are `'pixel'` and `'image'`.
      * @enum {string}
      */
-    type RasterOperationType = string;
+    export type RasterOperationType = string;
 
     /**
      * @namespace ol.source
@@ -8821,7 +8821,7 @@ export declare module ol {
          * State of the source, one of 'undefined', 'loading', 'ready' or 'error'.
          * @enum {string}
          */
-        type State = string;
+        export type State = string;
 
         /**
          * @classdesc
@@ -9602,7 +9602,7 @@ export declare module ol {
              *     specification that OpenLayers can make use of.
              * @enum {string}
              */
-            type ServerType = string;
+            export type ServerType = string;
 
         }
 
@@ -9610,7 +9610,7 @@ export declare module ol {
          * Request encoding. One of 'KVP', 'REST'.
          * @enum {string}
          */
-        type WMTSRequestEncoding = string;
+        export type WMTSRequestEncoding = string;
 
         /**
          * @classdesc
@@ -10067,13 +10067,13 @@ export declare module ol {
          * Icon anchor units. One of 'fraction', 'pixels'.
          * @enum {string}
          */
-        type IconAnchorUnits = string;
+        export type IconAnchorUnits = string;
 
         /**
          * Icon origin. One of 'bottom-left', 'bottom-right', 'top-left', 'top-right'.
          * @enum {string}
          */
-        type IconOrigin = string;
+        export type IconOrigin = string;
 
         /**
          * @classdesc
@@ -10757,7 +10757,7 @@ export declare module ol {
     }
 
     export module Tile {
-        type State = number;
+        export type State = number;
     }
 
     /**
@@ -10945,7 +10945,7 @@ export declare module ol {
     /**
      * @typedef {string|Array.<string>|ol.Attribution|Array.<ol.Attribution>}
      */
-    type AttributionLike = (string | string[] | ol.Attribution | ol.Attribution[]);
+    export type AttributionLike = (string | string[] | ol.Attribution | ol.Attribution[]);
 
     /**
      * A function returning the canvas element (`{HTMLCanvasElement}`)
@@ -10959,7 +10959,7 @@ export declare module ol {
      * @typedef {function(this:ol.source.ImageCanvas, ol.Extent, number,
      *     number, ol.Size, ol.proj.Projection): HTMLCanvasElement}
      */
-    type CanvasFunctionType = (self: ol.source.ImageCanvas, extent: ol.Extent, resolution: number, pixelRatio: number, size: ol.Size, proj: ol.proj.Projection) => HTMLCanvasElement;
+    export type CanvasFunctionType = (self: ol.source.ImageCanvas, extent: ol.Extent, resolution: number, pixelRatio: number, size: ol.Size, proj: ol.proj.Projection) => HTMLCanvasElement;
 
     /**
      * A color represented as a short array [red, green, blue, alpha].
@@ -10968,7 +10968,7 @@ export declare module ol {
      * given then `1` will be used.
      * @typedef {Array.<number>|Uint8Array|Uint8ClampedArray}
      */
-    type Color = (number[] | Uint8Array | Uint8ClampedArray);
+    export type Color = (number[] | Uint8Array | Uint8ClampedArray);
 
     /**
      * A type accepted by CanvasRenderingContext2D.fillStyle.
@@ -10976,13 +10976,13 @@ export declare module ol {
      *
      * @typedef {string|CanvasPattern|CanvasGradient}
      */
-    type ColorLike = (string | CanvasPattern | CanvasGradient);
+    export type ColorLike = (string | CanvasPattern | CanvasGradient);
 
     /**
      * An array of numbers representing an xy coordinate. Example: `[16, 48]`.
      * @typedef {Array.<number>}
      */
-    type Coordinate = [number, number];
+    export type Coordinate = [number, number];
 
     /**
      * A function that takes a {@link ol.Coordinate} and transforms it into a
@@ -10990,7 +10990,7 @@ export declare module ol {
      *
      * @typedef {function((ol.Coordinate|undefined)): string}
      */
-    type CoordinateFormatType = (coords?: ol.Coordinate) => string;
+    export type CoordinateFormatType = (coords?: ol.Coordinate) => string;
 
     /**
      * A function that takes a {@link ol.MapBrowserEvent} and two
@@ -10998,7 +10998,7 @@ export declare module ol {
      * true should be returned.
      * @typedef {function(ol.MapBrowserEvent, ol.Pixel, ol.Pixel):boolean}
      */
-    type DragBoxEndConditionType = (event: ol.MapBrowserEvent, pixel1: ol.Pixel, pixel2: ol.Pixel) => boolean;
+    export type DragBoxEndConditionType = (event: ol.MapBrowserEvent, pixel1: ol.Pixel, pixel2: ol.Pixel) => boolean;
 
     /**
      * Function that takes coordinates and an optional existing geometry as
@@ -11009,7 +11009,7 @@ export declare module ol {
      *     Array.<Array.<ol.Coordinate>>), ol.geom.SimpleGeometry=):
      *     ol.geom.SimpleGeometry}
      */
-    type DrawGeometryFunctionType = (coords: (ol.Coordinate | ol.Coordinate[] | ol.Coordinate[][]), geo: ol.geom.SimpleGeometry) => ol.geom.SimpleGeometry;
+    export type DrawGeometryFunctionType = (coords: (ol.Coordinate | ol.Coordinate[] | ol.Coordinate[][]), geo: ol.geom.SimpleGeometry) => ol.geom.SimpleGeometry;
 
     /**
      * A function that takes an {@link ol.MapBrowserEvent} and returns a
@@ -11017,7 +11017,7 @@ export declare module ol {
      *
      * @typedef {function(ol.MapBrowserEvent): boolean}
      */
-    type EventsConditionType = (event: ol.MapBrowserEvent) => boolean;
+    export type EventsConditionType = (event: ol.MapBrowserEvent) => boolean;
 
     /**
      * Key to use with {@link ol.Observable#unByKey}.
@@ -11030,13 +11030,13 @@ export declare module ol {
      *     target: (EventTarget|ol.events.EventTarget),
      *     type: string}}
      */
-    type EventsKey = Object;
+    export type EventsKey = Object;
 
     /**
      * An array of numbers representing an extent: `[minx, miny, maxx, maxy]`.
      * @typedef {Array.<number>}
      */
-    type Extent = [number, number, number, number];
+    export type Extent = [number, number, number, number];
 
     /**
      * {@link ol.source.Vector} sources use a function of this type to load
@@ -11052,7 +11052,7 @@ export declare module ol {
      * @typedef {function(this:ol.source.Vector, ol.Extent, number,
      *                    ol.proj.Projection)}
      */
-    type FeatureLoader = (self: ol.source.Vector, extent: ol.Extent, resolution: number, proj: ol.proj.Projection) => void;
+    export type FeatureLoader = (self: ol.source.Vector, extent: ol.Extent, resolution: number, proj: ol.proj.Projection) => void;
 
     /**
      * A function that returns an array of {@link ol.style.Style styles} given a
@@ -11062,7 +11062,7 @@ export declare module ol {
      * @typedef {function(this: ol.Feature, number):
      *     (ol.style.Style|Array.<ol.style.Style>)}
      */
-    type FeatureStyleFunction = (self: ol.Feature, resolution: number) => (ol.style.Style | ol.style.Style[]);
+    export type FeatureStyleFunction = (self: ol.Feature, resolution: number) => (ol.style.Style | ol.style.Style[]);
 
     /**
      * {@link ol.source.Vector} sources use a function of this type to get the url
@@ -11074,7 +11074,7 @@ export declare module ol {
      * `{string}` representing the URL.
      * @typedef {function(ol.Extent, number, ol.proj.Projection) : string}
      */
-    type FeatureUrlFunction = (extent: ol.Extent, resolution: number, proj: ol.proj.Projection) => string;
+    export type FeatureUrlFunction = (extent: ol.Extent, resolution: number, proj: ol.proj.Projection) => string;
 
     /**
      * A function that takes an {@link ol.Image} for the image and a `{string}` for
@@ -11092,7 +11092,7 @@ export declare module ol {
      *
      * @typedef {function(ol.Image, string)}
      */
-    type ImageLoadFunctionType = (image: ol.Image, url: string) => void;
+    export type ImageLoadFunctionType = (image: ol.Image, url: string) => void;
 
     /**
      * A function that takes an {@link ol.Extent} and a resolution as arguments, and
@@ -11101,16 +11101,16 @@ export declare module ol {
      *
      * @typedef {function(ol.Extent, number): Array.<ol.Extent>}
      */
-    type LoadingStrategy = (extent: ol.Extent, resolution: number) => ol.Extent[];
+    export type LoadingStrategy = (extent: ol.Extent, resolution: number) => ol.Extent[];
 
-    type ModifyEventType = string;
+    export type ModifyEventType = string;
 
     /**
      * An array with two elements, representing a pixel. The first element is the
      * x-coordinate, the second the y-coordinate of the pixel.
      * @typedef {Array.<number>}
      */
-    type Pixel = [number, number];
+    export type Pixel = [number, number];
 
     /**
      * Function to perform manipulations before rendering. This function is called
@@ -11119,14 +11119,14 @@ export declare module ol {
      * `false` to remove it.
      * @typedef {function(ol.Map, ?olx.FrameState): boolean}
      */
-    type PreRenderFunction = (map: ol.Map, state?: olx.FrameState) => boolean;
+    export type PreRenderFunction = (map: ol.Map, state?: olx.FrameState) => boolean;
 
     /**
      * A projection as {@link ol.proj.Projection}, SRS identifier string or
      * undefined.
      * @typedef {ol.proj.Projection|string|undefined} ol.ProjectionLike
      */
-    type ProjectionLike = (ol.proj.Projection | string);
+    export type ProjectionLike = (ol.proj.Projection | string);
 
     /**
      * A function that takes an array of input data, performs some operation, and
@@ -11145,7 +11145,7 @@ export declare module ol {
      * @typedef {function((Array.<Array.<number>>|Array.<ImageData>), Object):
      *     (Array.<number>|ImageData)}
      */
-    type RasterOperation = (data: (number[][] | ImageData[]), obj: GlobalObject) => (number[] | ImageData);
+    export type RasterOperation = (data: (number[][] | ImageData[]), obj: GlobalObject) => (number[] | ImageData);
 
     /**
      * A function that takes an {@link ol.Feature} or {@link ol.render.Feature} and
@@ -11154,13 +11154,13 @@ export declare module ol {
      * @typedef {function((ol.Feature|ol.render.Feature), ol.layer.Layer):
      *     boolean}
      */
-    type SelectFilterFunction = (feature: (ol.Feature | ol.render.Feature), layer: ol.layer.Layer) => boolean;
+    export type SelectFilterFunction = (feature: (ol.Feature | ol.render.Feature), layer: ol.layer.Layer) => boolean;
 
     /**
      * An array of numbers representing a size: `[width, height]`.
      * @typedef {Array.<number>}
      */
-    type Size = [number, number];
+    export type Size = [number, number];
 
     /**
      * @typedef {{attributions: (ol.AttributionLike|undefined),
@@ -11275,7 +11275,7 @@ export declare module ol {
      * @typedef {function((ol.Feature|ol.render.Feature), number):
      *     (ol.style.Style|Array.<ol.style.Style>)}
      */
-    type StyleFunction = (feature: (ol.Feature | ol.render.Feature), resolution: number) => (ol.style.Style | ol.style.Style[]);
+    export type StyleFunction = (feature: (ol.Feature | ol.render.Feature), resolution: number) => (ol.style.Style | ol.style.Style[]);
 
     /**
      * A function that takes an {@link ol.Feature} as argument and returns an
@@ -11284,14 +11284,14 @@ export declare module ol {
      * @typedef {function((ol.Feature|ol.render.Feature)):
      *     (ol.geom.Geometry|ol.render.Feature|undefined)}
      */
-    type StyleGeometryFunction = (feature: (ol.Feature | ol.render.Feature)) => (ol.geom.Geometry | ol.render.Feature);
+    export type StyleGeometryFunction = (feature: (ol.Feature | ol.render.Feature)) => (ol.geom.Geometry | ol.render.Feature);
 
     /**
      * An array of three numbers representing the location of a tile in a tile
      * grid. The order is `z`, `x`, and `y`. `z` is the zoom level.
      * @typedef {Array.<number>} ol.TileCoord
      */
-    type TileCoord = [number, number, number];
+    export type TileCoord = [number, number, number];
 
     /**
      * A function that takes an {@link ol.Tile} for the tile and a `{string}` for
@@ -11299,7 +11299,7 @@ export declare module ol {
      *
      * @typedef {function(ol.Tile, string)}
      */
-    type TileLoadFunctionType = (tile: ol.Tile, url: string) => void;
+    export type TileLoadFunctionType = (tile: ol.Tile, url: string) => void;
 
     /**
      * {@link ol.source.Tile} sources use a function of this type to get the url
@@ -11314,7 +11314,7 @@ export declare module ol {
      * @typedef {function(ol.TileCoord, number,
      *           ol.proj.Projection): (string|undefined)}
      */
-    type TileUrlFunctionType = (coords: ol.TileCoord, pixelRatio: number, proj: ol.proj.Projection) => string;
+    export type TileUrlFunctionType = (coords: ol.TileCoord, pixelRatio: number, proj: ol.proj.Projection) => string;
 
     /**
      * A transform function accepts an array of input coordinate values, an optional
@@ -11324,14 +11324,14 @@ export declare module ol {
      *
      * @typedef {function(Array.<number>, Array.<number>=, number=): Array.<number>}
      */
-    type TransformFunction = (array: number[], out?: number[], dimension?: number) => number[];
+    export type TransformFunction = (array: number[], out?: number[], dimension?: number) => number[];
 
     /**
      * Number of features; bounds/extent.
      * @typedef {{numberOfFeatures: number,
      *            bounds: ol.Extent}}
      */
-    type WFSFeatureCollectionMetadata = Object;
+    export type WFSFeatureCollectionMetadata = Object;
 
     /**
      * Total deleted; total inserted; total updated; array of insert ids.
@@ -11340,7 +11340,7 @@ export declare module ol {
      *            totalUpdated: number,
      *            insertIds: Array.<string>}}
      */
-    type WFSTransactionResponse = Object;
+    export type WFSTransactionResponse = Object;
 
     /**
      * @constructor
@@ -12739,7 +12739,7 @@ export declare module olx {
             wrapX?: boolean;
         }
 
-        type TileJSON = JSON;
+        export type TileJSON = JSON;
 
         /**
          * @typedef {{preemptive: (boolean|undefined),
