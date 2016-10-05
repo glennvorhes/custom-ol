@@ -2,14 +2,15 @@
   "name": "custom-ol",
   "version": "1.0.0",
   "description": "smaller custom openlayers build",
-  "main": "./lib/index.js",
-  "typings": "./lib/openlayers-npm.d.ts",
+  "main": "lib/index.js",
+  "typings": "ol/openlayers-npm.d.ts",
   "files": [
-    "lib"
+    "lib",
+    "ol"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ol": "node node_modules/openlayers/tasks/build.js src/ol-config.json lib/ol-build.js",
+    "ol": "node node_modules/openlayers/tasks/build.js src/ol-config.json ol/ol-build.js",
     "tsc": "tsc -w",
     "server": "C:\\Python33\\python.exe -m http.server 5001",
     "update-types": "C:\\Python33\\python.exe src\\modify_ts_d.py"
