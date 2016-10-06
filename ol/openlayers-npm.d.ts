@@ -4,7 +4,7 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // Definitions partially generated using tsd-jsdoc (https://github.com/englercj/tsd-jsdoc)
 
-export declare type GlobalObject = Object;
+declare type GlobalObject = Object;
 
 /**
  * @namespace ol
