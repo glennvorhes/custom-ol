@@ -50,8 +50,7 @@ for i in range(len(input_lines)):
     #
     # input_lines[i] = input_lines[i].replace("declare module ol", "export declare module ol")
 
-    input_lines[i] = input_lines[i].replace('declare module ', 'export declare module ')
-    input_lines[i] = input_lines[i].replace('declare type ', 'export declare type ')
+
 
     # if input_lines[i].find(declare_module_ol) > -1:
     #     input_lines[i] = input_lines[i].replace(declare_module_ol, export_module)
@@ -59,11 +58,23 @@ for i in range(len(input_lines)):
     # if input_lines[i].find('@namespace olx') > -1:
     #     break
     #
-    for j in range(len(candidates)):
-        if input_lines[i].find(candidates[j]):
-            input_lines[i] = input_lines[i].replace(candidates[j], candidates_replace[j])
+
+
+    # input_lines[i] = input_lines[i].replace('declare module ', 'export declare module ')
+    # input_lines[i] = input_lines[i].replace('declare type ', 'export declare type ')
+    #
+    # for j in range(len(candidates)):
+    #     if input_lines[i].find(candidates[j]):
+    #         input_lines[i] = input_lines[i].replace(candidates[j], candidates_replace[j])
+
+
+
+
+
     #
     # input_lines[i] = input_lines[i].replace('export module', 'export namespace')
+
+    pass
 
 
 with open(output_file, 'w') as out_file:
