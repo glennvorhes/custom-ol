@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "smaller custom openlayers build",
   "main": "./lib/test.js",
-  "typings": "./lib/index.d.ts",
+  "typings": "./ol/ol-npm.d.ts",
   "files": [
     "lib",
-    "ol"
+    "ol",
+    "src"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
