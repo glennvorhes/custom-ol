@@ -4,14 +4,12 @@
     "module": "commonjs",
     "outDir": "lib/",
     "target": "es5",
-    "declaration": true,
     "typeRoots": [
       "node_modules/@types"
     ]
   },
   "files": [
-    "./src/index.ts",
-    "./src/test.ts"
+    "./src/index.ts"
   ],
   "exclude": [
     "node_modules", "DefinitelyTyped"

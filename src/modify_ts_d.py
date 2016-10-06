@@ -10,7 +10,7 @@ openlayers_types = os.path.join(
 
 output_file = os.path.join(
     os.path.dirname(__file__), os.pardir,
-    'ol', 'openlayers-npm.d.ts')
+    'lib', 'index.d.ts')
 
 input_lines = []
 """
