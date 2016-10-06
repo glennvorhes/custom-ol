@@ -26,9 +26,9 @@ with open(openlayers_types, 'r') as original:
 
         input_lines.append(ln + '\n')
 
-declare_module_ol = 'declare module ol'
-declare_module_olx = 'declare module olx'
-export_module = 'export module ol'
+# declare_module_ol = 'declare module ol'
+# declare_module_olx = 'declare module olx'
+# export_module = 'export module ol'
 
 prefix = '   '
 suffix = ' '
@@ -37,10 +37,21 @@ candidates_replace = ['export ' + c for c in candidates]
 candidates = [prefix + c + suffix for c in candidates]
 candidates_replace = [prefix + c + suffix for c in candidates_replace]
 
+skip = False
+
 for i in range(len(input_lines)):
 
-    input_lines[i] = input_lines[i].replace('declare module ', 'export declare module ')
-    input_lines[i] = input_lines[i].replace('declare type ', 'export declare type ')
+    if skip:
+        continue
+
+    if input_lines[i].find("declare module olx") > -1:
+        skip = True
+        continue
+
+    input_lines[i] = input_lines[i].replace("declare module ol", "export declare module ol")
+
+    # input_lines[i] = input_lines[i].replace('declare module ', 'export declare module ')
+    # input_lines[i] = input_lines[i].replace('declare type ', 'export declare type ')
 
     # if input_lines[i].find(declare_module_ol) > -1:
     #     input_lines[i] = input_lines[i].replace(declare_module_ol, export_module)

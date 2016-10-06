@@ -4,7 +4,7 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // Definitions partially generated using tsd-jsdoc (https://github.com/englercj/tsd-jsdoc)
 
-export declare type GlobalObject = Object;
+declare type GlobalObject = Object;
 
 /**
  * @namespace ol
@@ -11675,19 +11675,19 @@ export declare module ol {
 /**
  * @namespace olx
  */
-export declare module olx {
+declare module olx {
 
     /**
      * @namespace olx.animation
      */
-    export module animation {
+    module animation {
         /**
          * @typedef {{resolution: number,
          *     start: (number|undefined),
          *     duration: (number|undefined),
          *     easing: (function(number):number|undefined)}}
          */
-        export interface BounceOptions {
+        interface BounceOptions {
             resolution: number;
             start?: number;
             duration?: number;
@@ -11701,7 +11701,7 @@ export declare module olx {
          *     duration: (number|undefined),
          *     easing: (function(number):number|undefined)}}
          */
-        export interface PanOptions {
+        interface PanOptions {
             source: ol.Coordinate;
             start?: number;
             duration?: number;
@@ -11716,7 +11716,7 @@ export declare module olx {
          *     duration: (number|undefined),
          *     easing: (function(number):number|undefined)}}
          */
-        export interface RotateOptions {
+        interface RotateOptions {
             rotation?: number;
             anchor?: ol.Coordinate;
             start?: number;
@@ -11731,7 +11731,7 @@ export declare module olx {
          *     duration: (number|undefined),
          *     easing: (function(number):number|undefined)}}
          */
-        export interface ZoomOptions {
+        interface ZoomOptions {
             resolution: number;
             start?: number;
             duration?: number;
@@ -11744,7 +11744,7 @@ export declare module olx {
     /**
      * @namespace olx.control
      */
-    export module control {
+    module control {
         /**
          * @typedef {{className: (string|undefined),
          *     collapsible: (boolean|undefined),
@@ -11755,7 +11755,7 @@ export declare module olx {
          *     render: (function(ol.MapEvent)|undefined),
          *     target: (Element|undefined)}}
          */
-        export interface AttributionOptions {
+        interface AttributionOptions {
             className?: string;
             target?: Element;
             collapsible?: boolean;
@@ -11772,7 +11772,7 @@ export declare module olx {
          *     render: (function(ol.MapEvent)|undefined),
          *     target: (Element|string|undefined)}}
          */
-        export interface ControlOptions {
+        interface ControlOptions {
             element?: Element;
             render?: ((event: ol.MapEvent) => any);
             target?: (Element | string);
@@ -11787,7 +11787,7 @@ export declare module olx {
          *     zoom: (boolean|undefined),
          *     zoomOptions: (olx.control.ZoomOptions|undefined)}}
          */
-        export interface DefaultsOptions {
+        interface DefaultsOptions {
             attribution?: boolean;
             attributionOptions?: olx.control.AttributionOptions;
             rotate?: boolean;
@@ -11806,7 +11806,7 @@ export declare module olx {
          *     target: (Element|undefined),
          *     source: (Element|string|undefined)}}
          */
-        export interface FullScreenOptions {
+        interface FullScreenOptions {
             className?: string;
             label?: (string | Node);
             labelActive?: (string | Node);
@@ -11825,7 +11825,7 @@ export declare module olx {
          *     target: (Element|undefined),
          *     undefinedHTML: (string|undefined)}}
          */
-        export interface MousePositionOptions {
+        interface MousePositionOptions {
             className?: string;
             coordinateFormat?: ol.CoordinateFormatType;
             projection: ol.ProjectionLike;
@@ -11846,7 +11846,7 @@ export declare module olx {
          *     tipLabel: (string|undefined),
          *     view: (ol.View|undefined)}}
          */
-        export interface OverviewMapOptions {
+        interface OverviewMapOptions {
             collapsed?: boolean;
             collapseLabel?: (string | Node);
             collapsible?: boolean;
@@ -11866,7 +11866,7 @@ export declare module olx {
          *     target: (Element|undefined),
          *     units: (ol.control.ScaleLine.Units|string|undefined)}}
          */
-        export interface ScaleLineOptions {
+        interface ScaleLineOptions {
             className?: string;
             minWidth?: number;
             render?: ((event: ol.MapEvent) => any);
@@ -11885,7 +11885,7 @@ export declare module olx {
          *     resetNorth: (function()|undefined),
          *     autoHide: (boolean|undefined)}}
          */
-        export interface RotateOptions {
+        interface RotateOptions {
             className?: string;
             label?: (string | Element);
             tipLabel?: string;
@@ -11907,7 +11907,7 @@ export declare module olx {
          *     delta: (number|undefined),
          *     target: (Element|undefined)}}
          */
-        export interface ZoomOptions {
+        interface ZoomOptions {
             duration?: number;
             className?: string;
             zoomInLabel?: (string | Node);
@@ -11926,7 +11926,7 @@ export declare module olx {
          *     minResolution: (number|undefined),
          *     render: (function(ol.MapEvent)|undefined)}}
          */
-        export interface ZoomSliderOptions {
+        interface ZoomSliderOptions {
             className?: string;
             duration?: number;
             maxResolution?: number;
@@ -11942,7 +11942,7 @@ export declare module olx {
          *     tipLabel: (string|undefined),
          *     extent: (ol.Extent|undefined)}}
          */
-        export interface ZoomToExtentOptions {
+        interface ZoomToExtentOptions {
             className?: string;
             target?: Element;
             label?: (string | Node);
@@ -11956,13 +11956,13 @@ export declare module olx {
     /**
      * @namespace olx.format
      */
-    export module format {
+    module format {
         /**
          * @typedef {{dataProjection: ol.ProjectionLike,
          *     featureProjection: ol.ProjectionLike,
          *     rightHanded: (boolean|undefined)}}
          */
-        export interface ReadOptions {
+        interface ReadOptions {
             dataProjection: ol.ProjectionLike;
             featureProjection: ol.ProjectionLike;
         }
@@ -11974,7 +11974,7 @@ export declare module olx {
          *     rightHanded: (boolean|undefined),
          *     decimals: (number|undefined)}}
          */
-        export interface WriteOptions {
+        interface WriteOptions {
             dataProjection: ol.ProjectionLike;
             featureProjection: ol.ProjectionLike;
             rightHanded?: boolean;
@@ -11986,7 +11986,7 @@ export declare module olx {
          * @typedef {{defaultDataProjection: ol.ProjectionLike,
          *     geometryName: (string|undefined)}}
          */
-        export interface GeoJSONOptions {
+        interface GeoJSONOptions {
             defaultDataProjection: ol.ProjectionLike;
             geometryName?: string;
         }
@@ -11995,7 +11995,7 @@ export declare module olx {
         /**
          * @typedef {{geometryName: (string|undefined)}}
          */
-        export interface EsriJSONOptions {
+        interface EsriJSONOptions {
             geometryName?: string;
         }
 
@@ -12008,7 +12008,7 @@ export declare module olx {
          *     layers: (Array.<string>|undefined),
          *     layerName: (string|undefined)}}
          */
-        export interface MVTOptions {
+        interface MVTOptions {
             featureClass?: (((geom: (ol.geom.Geometry | { [k: string]: any })) => any) | ((geom: ol.geom.GeometryType, arg2: number[], arg3: (number[] | number[][]), arg4: { [k: string]: any }) => any));
             geometryName?: string;
             layerName?: string;
@@ -12020,7 +12020,7 @@ export declare module olx {
          * @typedef {{factor: (number|undefined),
          *     geometryLayout: (ol.geom.GeometryLayout|undefined)}}
          */
-        export interface PolylineOptions {
+        interface PolylineOptions {
             factor?: number;
             geometryLayout?: ol.geom.GeometryLayout;
         }
@@ -12029,7 +12029,7 @@ export declare module olx {
         /**
          * @typedef {{defaultDataProjection: ol.ProjectionLike}}
          */
-        export interface TopoJSONOptions {
+        interface TopoJSONOptions {
             defaultDataProjection: ol.ProjectionLike;
         }
 
@@ -12037,7 +12037,7 @@ export declare module olx {
         /**
          * @typedef {{altitudeMode: (ol.format.IGCZ|undefined)}}
          */
-        export interface IGCOptions {
+        interface IGCOptions {
             altitudeMode?: ol.format.IGCZ;
         }
 
@@ -12048,7 +12048,7 @@ export declare module olx {
          *     showPointNames: (boolean|undefined),
          *     writeStyles: (boolean|undefined)}}
          */
-        export interface KMLOptions {
+        interface KMLOptions {
             extractStyles?: boolean;
             showPointNames?: boolean;
             defaultStyle?: ol.style.Style[];
@@ -12066,7 +12066,7 @@ export declare module olx {
          *     multiSurface: (boolean|undefined),
          *     schemaLocation: (string|undefined)}}
          */
-        export interface GMLOptions {
+        interface GMLOptions {
             featureNS?: ({ [k: string]: string } | string);
             featureType?: (string[] | string);
             srsName: string;
@@ -12081,7 +12081,7 @@ export declare module olx {
         /**
          * @typedef {{readExtensions: (function(ol.Feature, Node)|undefined)}}
          */
-        export interface GPXOptions {
+        interface GPXOptions {
             readExtensions?: ((feature: ol.Feature, node: Node) => any);
         }
 
@@ -12092,7 +12092,7 @@ export declare module olx {
          *     gmlFormat: (ol.format.GMLBase|undefined),
          *     schemaLocation: (string|undefined)}}
          */
-        export interface WFSOptions {
+        interface WFSOptions {
             featureNS?: ({ [k: string]: string } | string);
             featureType?: (string[] | string);
             gmlFormat?: ol.format.GMLBase;
@@ -12116,7 +12116,7 @@ export declare module olx {
          *     filter: (ol.format.ogc.filter.Filter|undefined),
          *     resultType: (string|undefined)}}
          */
-        export interface WFSWriteGetFeatureOptions {
+        interface WFSWriteGetFeatureOptions {
             featureNS: string;
             featurePrefix: string;
             featureTypes: string[];
@@ -12143,7 +12143,7 @@ export declare module olx {
          *     nativeElements: Array.<Object>,
          *     gmlOptions: (olx.format.GMLOptions|undefined)}}
          */
-        export interface WFSWriteTransactionOptions {
+        interface WFSWriteTransactionOptions {
             featureNS: string;
             featurePrefix: string;
             featureType: string;
@@ -12157,7 +12157,7 @@ export declare module olx {
         /**
          * @typedef {{splitCollection: (boolean|undefined)}}
          */
-        export interface WKTOptions {
+        interface WKTOptions {
             splitCollection?: boolean;
         }
 
@@ -12167,7 +12167,7 @@ export declare module olx {
          *     layers: (Array.<string>|undefined)
          * }}
          */
-        export interface WMSGetFeatureInfoOptions {
+        interface WMSGetFeatureInfoOptions {
             layers?: string[];
         }
 
@@ -12177,12 +12177,12 @@ export declare module olx {
     /**
      * @namespace olx.interaction
      */
-    export module interaction {
+    module interaction {
         /**
          * Object literal with config options for interactions.
          * @typedef {{handleEvent: function(ol.MapBrowserEvent):boolean}}
          */
-        export interface InteractionOptions {
+        interface InteractionOptions {
             handleEvent: (event: ol.MapBrowserEvent) => boolean;
         }
 
@@ -12200,7 +12200,7 @@ export declare module olx {
          *     zoomDelta: (number|undefined),
          *     zoomDuration: (number|undefined)}}
          */
-        export interface DefaultsOptions {
+        interface DefaultsOptions {
             altShiftDragRotate?: boolean;
             doubleClickZoom?: boolean;
             keyboard?: boolean;
@@ -12218,7 +12218,7 @@ export declare module olx {
          * @typedef {{duration: (number|undefined),
          *     delta: (number|undefined)}}
          */
-        export interface DoubleClickZoomOptions {
+        interface DoubleClickZoomOptions {
             duration?: number;
             delta?: number;
         }
@@ -12229,7 +12229,7 @@ export declare module olx {
          *     projection: ol.ProjectionLike,
          *     target: (Element|undefined)}}
          */
-        export interface DragAndDropOptions {
+        interface DragAndDropOptions {
             formatConstructors?: ((n: ol.format.Feature) => any)[];
             projection: ol.ProjectionLike;
             target?: Element;
@@ -12241,7 +12241,7 @@ export declare module olx {
          *     condition: (ol.EventsConditionType|undefined),
          *     boxEndCondition: (ol.DragBoxEndConditionType|undefined)}}
          */
-        export interface DragBoxOptions {
+        interface DragBoxOptions {
             className?: string;
             condition?: ol.EventsConditionType;
             boxEndCondition?: ol.DragBoxEndConditionType;
@@ -12252,7 +12252,7 @@ export declare module olx {
          * @typedef {{condition: (ol.EventsConditionType|undefined),
          *     kinetic: (ol.Kinetic|undefined)}}
          */
-        export interface DragPanOptions {
+        interface DragPanOptions {
             condition?: ol.EventsConditionType;
             kinetic?: ol.Kinetic;
         }
@@ -12262,7 +12262,7 @@ export declare module olx {
          * @typedef {{condition: (ol.EventsConditionType|undefined),
          *     duration: (number|undefined)}}
          */
-        export interface DragRotateAndZoomOptions {
+        interface DragRotateAndZoomOptions {
             condition?: ol.EventsConditionType;
             duration?: number;
         }
@@ -12272,7 +12272,7 @@ export declare module olx {
          * @typedef {{condition: (ol.EventsConditionType|undefined),
          *     duration: (number|undefined)}}
          */
-        export interface DragRotateOptions {
+        interface DragRotateOptions {
             condition?: ol.EventsConditionType;
             duration?: number;
         }
@@ -12284,7 +12284,7 @@ export declare module olx {
          *     duration: (number|undefined),
          *     out: (boolean|undefined)}}
          */
-        export interface DragZoomOptions {
+        interface DragZoomOptions {
             className?: string;
             condition?: ol.EventsConditionType;
             duration?: number;
@@ -12308,7 +12308,7 @@ export declare module olx {
          *     freehandCondition: (ol.EventsConditionType|undefined),
          *     wrapX: (boolean|undefined)}}
          */
-        export interface DrawOptions {
+        interface DrawOptions {
             clickTolerance?: number;
             features?: ol.Collection<ol.Feature>;
             source?: ol.source.Vector;
@@ -12332,7 +12332,7 @@ export declare module olx {
          *     layers: (undefined|Array.<ol.layer.Layer>|function(ol.layer.Layer): boolean)
          * }}
          */
-        export interface TranslateOptions {
+        interface TranslateOptions {
             features?: ol.Collection<ol.Feature>;
             layers?: (ol.layer.Layer[] | ((layer: ol.layer.Layer) => boolean));
         }
@@ -12343,7 +12343,7 @@ export declare module olx {
          *     duration: (number|undefined),
          *     pixelDelta: (number|undefined)}}
          */
-        export interface KeyboardPanOptions {
+        interface KeyboardPanOptions {
             condition?: ol.EventsConditionType;
             duration?: number;
             pixelDelta?: number;
@@ -12355,7 +12355,7 @@ export declare module olx {
          *     condition: (ol.EventsConditionType|undefined),
          *     delta: (number|undefined)}}
          */
-        export interface KeyboardZoomOptions {
+        interface KeyboardZoomOptions {
             duration?: number;
             condition?: ol.EventsConditionType;
             delta?: number;
@@ -12370,7 +12370,7 @@ export declare module olx {
          *     features: ol.Collection.<ol.Feature>,
          *     wrapX: (boolean|undefined)}}
          */
-        export interface ModifyOptions {
+        interface ModifyOptions {
             condition?: ol.EventsConditionType;
             deleteCondition?: ol.EventsConditionType;
             pixelTolerance?: number;
@@ -12384,7 +12384,7 @@ export declare module olx {
          * @typedef {{duration: (number|undefined),
          *     useAnchor: (boolean|undefined)}}
          */
-        export interface MouseWheelZoomOptions {
+        interface MouseWheelZoomOptions {
             duration?: number;
             useAnchor?: boolean;
         }
@@ -12394,7 +12394,7 @@ export declare module olx {
          * @typedef {{threshold: (number|undefined),
          *     duration: (number|undefined)}}
          */
-        export interface PinchRotateOptions {
+        interface PinchRotateOptions {
             duration?: number;
             threshold?: number;
         }
@@ -12403,7 +12403,7 @@ export declare module olx {
         /**
          * @typedef {{duration: (number|undefined)}}
          */
-        export interface PinchZoomOptions {
+        interface PinchZoomOptions {
             duration?: number;
         }
 
@@ -12415,7 +12415,7 @@ export declare module olx {
          *     handleMoveEvent: (function(ol.MapBrowserPointerEvent)|undefined),
          *     handleUpEvent: (function(ol.MapBrowserPointerEvent):boolean|undefined)}}
          */
-        export interface PointerOptions {
+        interface PointerOptions {
             handleDownEvent?: ((event: ol.MapBrowserPointerEvent) => boolean);
             handleDragEvent?: ((event: ol.MapBrowserPointerEvent) => boolean);
             handleEvent?: ((event: ol.MapBrowserPointerEvent) => boolean);
@@ -12436,7 +12436,7 @@ export declare module olx {
          *     filter: (ol.SelectFilterFunction|undefined),
          *     wrapX: (boolean|undefined)}}
          */
-        export interface SelectOptions {
+        interface SelectOptions {
             addCondition?: ol.EventsConditionType;
             condition?: ol.EventsConditionType;
             layers?: (ol.layer.Layer[] | ((layer: ol.layer.Layer) => boolean));
@@ -12460,7 +12460,7 @@ export declare module olx {
          *     vertex: (boolean|undefined)
          * }}
          */
-        export interface SnapOptions {
+        interface SnapOptions {
             features?: ol.Collection<ol.Feature>;
             edge?: boolean;
             vertex?: boolean;
@@ -12474,7 +12474,7 @@ export declare module olx {
     /**
      * @namespace olx.layer
      */
-    export module layer {
+    module layer {
         /**
          * @typedef {{opacity: (number|undefined),
          *     visible: (boolean|undefined),
@@ -12483,7 +12483,7 @@ export declare module olx {
          *     minResolution: (number|undefined),
          *     maxResolution: (number|undefined)}}
          */
-        export interface BaseOptions {
+        interface BaseOptions {
             opacity?: number;
             visible?: boolean;
             extent?: ol.Extent;
@@ -12502,7 +12502,7 @@ export declare module olx {
          *     minResolution: (number|undefined),
          *     maxResolution: (number|undefined)}}
          */
-        export interface LayerOptions {
+        interface LayerOptions {
             opacity?: number;
             source?: ol.source.Source;
             visible?: boolean;
@@ -12522,7 +12522,7 @@ export declare module olx {
          *     maxResolution: (number|undefined),
          *     layers: (Array.<ol.layer.Base>|ol.Collection.<ol.layer.Base>|undefined)}}
          */
-        export interface GroupOptions {
+        interface GroupOptions {
             opacity?: number;
             visible?: boolean;
             extent?: ol.Extent;
@@ -12546,7 +12546,7 @@ export declare module olx {
          *     source: (ol.source.Vector|undefined),
          *     visible: (boolean|undefined)}}
          */
-        export interface HeatmapOptions {
+        interface HeatmapOptions {
             gradient?: string[];
             radius?: number;
             blur?: number;
@@ -12570,7 +12570,7 @@ export declare module olx {
          *     minResolution: (number|undefined),
          *     maxResolution: (number|undefined)}}
          */
-        export interface ImageOptions {
+        interface ImageOptions {
             opacity?: number;
             source: ol.source.Image;
             map?: ol.Map;
@@ -12592,7 +12592,7 @@ export declare module olx {
          *     maxResolution: (number|undefined),
          *     useInterimTilesOnError: (boolean|undefined)}}
          */
-        export interface TileOptions {
+        interface TileOptions {
             opacity?: number;
             preload?: number;
             source: ol.source.Tile;
@@ -12618,7 +12618,7 @@ export declare module olx {
          *     updateWhileInteracting: (boolean|undefined),
          *     visible: (boolean|undefined)}}
          */
-        export interface VectorOptions {
+        interface VectorOptions {
             renderOrder?: (feature1: ol.Feature, feature2: ol.Feature) => number;
             map?: ol.Map;
             extent?: ol.Extent;
@@ -12649,7 +12649,7 @@ export declare module olx {
          *     updateWhileInteracting: (boolean|undefined),
          *     visible: (boolean|undefined)}}
          */
-        export interface VectorTileOptions {
+        interface VectorTileOptions {
             renderBuffer?: number;
             renderMode?: (ol.layer.VectorTileRenderType | string);
             renderOrder: (feature1: ol.Feature, feature2: ol.Feature) => number;
@@ -12671,18 +12671,18 @@ export declare module olx {
     /**
      * @namespace olx.parser
      */
-    export module parser {
+    module parser {
     }
 
     /**
      * @namespace olx.render
      */
-    export module render {
+    module render {
         /**
          * @typedef {{size: (ol.Size|undefined),
          *     pixelRatio: (number|undefined)}}
          */
-        export interface ToContextOptions {
+        interface ToContextOptions {
             size?: ol.Size;
             pixelRatio?: number;
         }
@@ -12693,7 +12693,7 @@ export declare module olx {
     /**
      * @namespace olx.source
      */
-    export module source {
+    module source {
         /**
          * @typedef {{cacheSize: (number|undefined),
          *     culture: (string|undefined),
@@ -12704,7 +12704,7 @@ export declare module olx {
          *     tileLoadFunction: (ol.TileLoadFunctionType|undefined),
          *     wrapX: (boolean|undefined)}}
          */
-        export interface BingMapsOptions {
+        interface BingMapsOptions {
             cacheSize?: number;
             culture?: string;
             key: string;
@@ -12727,7 +12727,7 @@ export declare module olx {
          *     source: ol.source.Vector,
          *     wrapX: (boolean|undefined)}}
          */
-        export interface ClusterOptions {
+        interface ClusterOptions {
             attributions?: ol.AttributionLike;
             distance?: number;
             extent?: ol.Extent;
@@ -12739,7 +12739,7 @@ export declare module olx {
             wrapX?: boolean;
         }
 
-        export type TileJSON = JSON;
+        type TileJSON = JSON;
 
         /**
          * @typedef {{preemptive: (boolean|undefined),
@@ -12747,7 +12747,7 @@ export declare module olx {
          *     tileJSON: (TileJSON|undefined),
          *     url: (string|undefined)}}
          */
-        export interface TileUTFGridOptions {
+        interface TileUTFGridOptions {
             jsonp?: boolean;
             preemptive?: boolean;
             tileJSON?: TileJSON;
@@ -12775,7 +12775,7 @@ export declare module olx {
          *            urls: (Array.<string>|undefined),
          *            wrapX: (boolean|undefined)}}
          */
-        export interface TileImageOptions {
+        interface TileImageOptions {
             attributions?: ol.AttributionLike;
             cacheSize?: number;
             crossOrigin?: (string);
@@ -12814,7 +12814,7 @@ export declare module olx {
          *            urls: (Array.<string>|undefined),
          *            wrapX: (boolean|undefined)}}
          */
-        export interface VectorTileOptions {
+        interface VectorTileOptions {
             attributions?: ol.AttributionLike;
             cacheSize?: number;
             format?: ol.format.Feature;
@@ -12845,7 +12845,7 @@ export declare module olx {
          *     imageLoadFunction: (ol.ImageLoadFunctionType|undefined),
          *     params: (Object|undefined)}}
          */
-        export interface ImageMapGuideOptions {
+        interface ImageMapGuideOptions {
             url?: string;
             displayDpi?: number;
             metersPerUnit?: number;
@@ -12866,7 +12866,7 @@ export declare module olx {
          *     tileLoadFunction: (ol.TileLoadFunctionType|undefined),
          *     url: (string|undefined)}}
          */
-        export interface MapQuestOptions {
+        interface MapQuestOptions {
             cacheSize?: number;
             layer: string;
             reprojectionErrorThreshold?: number;
@@ -12880,7 +12880,7 @@ export declare module olx {
          *     tileGrid: (ol.tilegrid.TileGrid|undefined),
          *     wrapX: (boolean|undefined)}}
          */
-        export interface TileDebugOptions {
+        interface TileDebugOptions {
             projection: ol.ProjectionLike;
             tileGrid?: ol.tilegrid.TileGrid;
             wrapX?: boolean;
@@ -12898,7 +12898,7 @@ export declare module olx {
          *     url: (string|undefined),
          *     wrapX: (boolean|undefined)}}
          */
-        export interface OSMOptions {
+        interface OSMOptions {
             attributions?: ol.AttributionLike;
             cacheSize?: number;
             crossOrigin?: (string);
@@ -12922,7 +12922,7 @@ export declare module olx {
          *     resolutions: (Array.<number>|undefined),
          *     url: (string|undefined)}}
          */
-        export interface ImageArcGISRestOptions {
+        interface ImageArcGISRestOptions {
             attributions?: ol.Attribution[];
             crossOrigin?: (string);
             logo?: (string | olx.LogoOptions);
@@ -12944,7 +12944,7 @@ export declare module olx {
          *     resolutions: (Array.<number>|undefined),
          *     state: (ol.source.State|undefined)}}
          */
-        export interface ImageCanvasOptions {
+        interface ImageCanvasOptions {
             attributions?: ol.AttributionLike;
             canvasFunction: ol.CanvasFunctionType;
             logo?: (string | olx.LogoOptions);
@@ -12965,7 +12965,7 @@ export declare module olx {
          *     source: ol.source.Vector,
          *     style: (ol.style.Style|Array.<ol.style.Style>|ol.StyleFunction|undefined)}}
          */
-        export interface ImageVectorOptions {
+        interface ImageVectorOptions {
             attributions?: ol.AttributionLike;
             logo?: (string | olx.LogoOptions);
             projection: ol.ProjectionLike;
@@ -12985,7 +12985,7 @@ export declare module olx {
          *     operationType: (ol.RasterOperationType|undefined)}}
          * @api
          */
-        export interface RasterOptions {
+        interface RasterOptions {
             sources: ol.source.Source[];
             operation?: ol.RasterOperation;
             lib?: GlobalObject;
@@ -13007,7 +13007,7 @@ export declare module olx {
          *     resolutions: (Array.<number>|undefined),
          *     url: (string|undefined)}}
          */
-        export interface ImageWMSOptions {
+        interface ImageWMSOptions {
             attributions?: ol.AttributionLike;
             crossOrigin?: (string);
             hidpi?: boolean;
@@ -13032,7 +13032,7 @@ export declare module olx {
          *     tileLoadFunction: (ol.TileLoadFunctionType|undefined),
          *     url: (string|undefined)}}
          */
-        export interface StamenOptions {
+        interface StamenOptions {
             cacheSize?: number;
             layer: string;
             minZoom?: number;
@@ -13054,7 +13054,7 @@ export declare module olx {
          *     projection: ol.ProjectionLike,
          *     url: string}}
          */
-        export interface ImageStaticOptions {
+        interface ImageStaticOptions {
             attributions?: ol.AttributionLike;
             crossOrigin?: (string);
             imageExtent: ol.Extent;
@@ -13080,7 +13080,7 @@ export declare module olx {
          *     urls: (Array.<string>|undefined),
          *     wrapX: (boolean|undefined)}}
          */
-        export interface TileArcGISRestOptions {
+        interface TileArcGISRestOptions {
             attributions?: ol.AttributionLike;
             cacheSize?: number;
             crossOrigin?: (string);
@@ -13106,7 +13106,7 @@ export declare module olx {
          *     url: string,
          *     wrapX: (boolean|undefined)}}
          */
-        export interface TileJSONOptions {
+        interface TileJSONOptions {
             attributions?: ol.AttributionLike;
             cacheSize?: number;
             crossOrigin?: (string);
@@ -13135,7 +13135,7 @@ export declare module olx {
          *     urls: (Array.<string>|undefined),
          *     wrapX: (boolean|undefined)}}
          */
-        export interface TileWMSOptions {
+        interface TileWMSOptions {
             attributions?: ol.AttributionLike;
             cacheSize?: number;
             params: { [k: string]: any };
@@ -13166,7 +13166,7 @@ export declare module olx {
          *     useSpatialIndex: (boolean|undefined),
          *     wrapX: (boolean|undefined)}}
          */
-        export interface VectorOptions {
+        interface VectorOptions {
             attributions?: ol.AttributionLike;
             features?: (ol.Feature[] | ol.Collection<ol.Feature>);
             format?: ol.format.Feature;
@@ -13204,7 +13204,7 @@ export declare module olx {
          *                          ol.TileLoadFunctionType)|undefined),
          *     wrapX: (boolean|undefined)}}
          */
-        export interface WMTSOptions {
+        interface WMTSOptions {
             attributions?: ol.AttributionLike;
             cacheSize?: number;
             crossOrigin?: (string);
@@ -13247,7 +13247,7 @@ export declare module olx {
          *     urls: (Array.<string>|undefined),
          *     wrapX: (boolean|undefined)}}
          */
-        export interface XYZOptions {
+        interface XYZOptions {
             attributions?: ol.AttributionLike;
             cacheSize?: number;
             crossOrigin?: (string);
@@ -13281,7 +13281,7 @@ export declare module olx {
          *     map: (string|undefined),
          *     account: string}}
          */
-        export interface CartoDBOptions {
+        interface CartoDBOptions {
             attributions?: ol.AttributionLike;
             cacheSize?: number;
             crossOrigin?: (string);
@@ -13306,7 +13306,7 @@ export declare module olx {
          *     tierSizeCalculation: (string|undefined),
          *     size: ol.Size}}
          */
-        export interface ZoomifyOptions {
+        interface ZoomifyOptions {
             attributions?: ol.AttributionLike;
             cacheSize?: number;
             crossOrigin?: (string);
@@ -13323,7 +13323,7 @@ export declare module olx {
     /**
      * @namespace olx.style
      */
-    export module style {
+    module style {
         /**
          * @typedef {{fill: (ol.style.Fill|undefined),
          *     radius: number,
@@ -13331,7 +13331,7 @@ export declare module olx {
          *     stroke: (ol.style.Stroke|undefined),
          *     atlasManager: (ol.style.AtlasManager|undefined)}}
          */
-        export interface CircleOptions {
+        interface CircleOptions {
             fill?: ol.style.Fill;
             radius: number;
             snapToPixel?: boolean;
@@ -13343,7 +13343,7 @@ export declare module olx {
         /**
          * @typedef {{color: (ol.Color|ol.ColorLike|undefined)}}
          */
-        export interface FillOptions {
+        interface FillOptions {
             color?: (ol.Color | ol.ColorLike);
         }
 
@@ -13367,7 +13367,7 @@ export declare module olx {
          *     imgSize: (ol.Size|undefined),
          *     src: (string|undefined)}}
          */
-        export interface IconOptions {
+        interface IconOptions {
             anchor?: number[];
             anchorOrigin?: ol.style.IconOrigin;
             anchorXUnits?: ol.style.IconAnchorUnits;
@@ -13402,7 +13402,7 @@ export declare module olx {
          *     rotateWithView: (boolean|undefined),
          *     atlasManager: (ol.style.AtlasManager|undefined)}}
          */
-        export interface RegularShapeOptions {
+        interface RegularShapeOptions {
             fill?: ol.style.Fill;
             points: number;
             radius?: number;
@@ -13422,7 +13422,7 @@ export declare module olx {
          *     miterLimit: (number|undefined),
          *     width: (number|undefined)}}
          */
-        export interface StrokeOptions {
+        interface StrokeOptions {
             color?: ol.Color | string;
             lineCap?: string;
             lineJoin?: string;
@@ -13445,7 +13445,7 @@ export declare module olx {
          *     fill: (ol.style.Fill|undefined),
          *     stroke: (ol.style.Stroke|undefined)}}
          */
-        export interface TextOptions {
+        interface TextOptions {
             font?: string;
             offsetX?: number;
             offsetY?: number;
@@ -13467,7 +13467,7 @@ export declare module olx {
          *     text: (ol.style.Text|undefined),
          *     zIndex: (number|undefined)}}
          */
-        export interface StyleOptions {
+        interface StyleOptions {
             geometry?: (string | ol.geom.Geometry | ol.StyleGeometryFunction);
             fill?: ol.style.Fill;
             image?: ol.style.Image;
@@ -13482,7 +13482,7 @@ export declare module olx {
          *     maxSize: (number|undefined),
          *     space: (number|undefined)}}
          */
-        export interface AtlasManagerOptions {
+        interface AtlasManagerOptions {
             initialSize?: number;
             maxSize?: number;
             space?: number;
@@ -13494,7 +13494,7 @@ export declare module olx {
     /**
      * @namespace olx.tilegrid
      */
-    export module tilegrid {
+    module tilegrid {
         /**
          * @typedef {{extent: (ol.Extent|undefined),
          *     minZoom: (number|undefined),
@@ -13505,7 +13505,7 @@ export declare module olx {
          *     tileSize: (number|ol.Size|undefined),
          *     tileSizes: (Array.<number|ol.Size>|undefined)}}
          */
-        export interface TileGridOptions {
+        interface TileGridOptions {
             extent?: ol.Extent;
             minZoom?: number;
             origin?: ol.Coordinate;
@@ -13526,7 +13526,7 @@ export declare module olx {
          *     tileSize: (number|ol.Size|undefined),
          *     tileSizes: (Array.<number|ol.Size>|undefined)}}
          */
-        export interface WMTSOptions {
+        interface WMTSOptions {
             extent?: ol.Extent;
             origin?: ol.Coordinate;
             origins?: ol.Coordinate[];
@@ -13545,7 +13545,7 @@ export declare module olx {
          *     minZoom: (number|undefined),
          *     tileSize: (number|ol.Size|undefined)}}
          */
-        export interface XYZOptions {
+        interface XYZOptions {
             extent?: ol.Extent;
             maxZoom?: number;
             minZoom?: number;
@@ -13559,7 +13559,7 @@ export declare module olx {
      * @typedef {{html: string,
      *     tileRanges: (Object.<string, Array.<ol.TileRange>>|undefined)}}
      */
-    export interface AttributionOptions {
+    interface AttributionOptions {
         html: string;
     }
 
@@ -13567,7 +13567,7 @@ export declare module olx {
     /**
      * @typedef {{tracking: (boolean|undefined)}}
      */
-    export interface DeviceOrientationOptions {
+    interface DeviceOrientationOptions {
         tracking?: boolean;
     }
 
@@ -13576,7 +13576,7 @@ export declare module olx {
      *     trackingOptions: (PositionOptions|undefined),
      *     projection: ol.ProjectionLike}}
      */
-    export interface GeolocationOptions {
+    interface GeolocationOptions {
         tracking?: boolean;
         trackingOptions?: PositionOptions;
         projection: ol.ProjectionLike;
@@ -13587,7 +13587,7 @@ export declare module olx {
      * Object literal with config options for the map logo.
      * @typedef {{href: (string), src: (string)}}
      */
-    export interface LogoOptions {
+    interface LogoOptions {
         href: string;
         src: string;
     }
@@ -13599,7 +13599,7 @@ export declare module olx {
      *     strokeStyle: (ol.style.Stroke|undefined),
      *     targetSize: (number|undefined)}}
      */
-    export interface GraticuleOptions {
+    interface GraticuleOptions {
         map?: ol.Map;
         maxLines?: number;
         strokeStyle?: ol.style.Stroke;
@@ -13622,7 +13622,7 @@ export declare module olx {
      *     target: (Element|string|undefined),
      *     view: (ol.View|undefined)}}
      */
-    export interface MapOptions {
+    interface MapOptions {
         controls?: (ol.Collection<ol.control.Control> | ol.control.Control[]);
         pixelRatio?: number;
         interactions?: (ol.Collection<ol.interaction.Interaction> | ol.interaction.Interaction[]);
@@ -13651,7 +13651,7 @@ export declare module olx {
      *     autoPanAnimation: (olx.animation.PanOptions|undefined),
      *     autoPanMargin: (number|undefined)}}
      */
-    export interface OverlayOptions {
+    interface OverlayOptions {
         id?: (number | string);
         element?: Element;
         offset?: number[];
@@ -13676,7 +13676,7 @@ export declare module olx {
      *     worldExtent: (ol.Extent|undefined),
      *     getPointResolution: (function(number, ol.Coordinate):number|undefined) }}
      */
-    export interface ProjectionOptions {
+    interface ProjectionOptions {
         code: string;
         units?: (ol.proj.Units | string);
         extent?: ol.Extent;
@@ -13687,7 +13687,7 @@ export declare module olx {
         getPointResolution?: ((resolution: number, coords: ol.Coordinate) => number);
     }
 
-    export module view {
+    module view {
         /**
          * @typedef {{
          *     padding: (!Array.<number>|undefined),
@@ -13696,7 +13696,7 @@ export declare module olx {
          *     maxZoom: (number|undefined),
          *     minResolution: (number|undefined)}}
          */
-        export interface FitOptions {
+        interface FitOptions {
             padding?: number[];
             constrainResolution?: boolean;
             nearest?: boolean;
@@ -13722,7 +13722,7 @@ export declare module olx {
      *     zoom: (number|undefined),
      *     zoomFactor: (number|undefined)}}
      */
-    export interface ViewOptions {
+    interface ViewOptions {
         center?: ol.Coordinate;
         constrainRotation?: (boolean | number);
         enableRotation?: boolean;
@@ -13762,7 +13762,7 @@ export declare module olx {
      *     viewHints: Array.<number>,
      *     wantedTiles: !Object.<string, Object.<string, boolean>>}}
      */
-    export interface FrameState {
+    interface FrameState {
         pixelRatio: number;
         time: number;
         viewState: olx.ViewState;
@@ -13775,7 +13775,7 @@ export declare module olx {
      *     resolution: number,
      *     rotation: number}}
      */
-    export interface ViewState {
+    interface ViewState {
         center: ol.Coordinate;
         projection: ol.proj.Projection;
         resolution: number;
