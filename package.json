@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "smaller custom openlayers build",
   "main": "./lib/test.js",
-  "typings": "./ol/test.d.ts",
+  "typings": "./lib/test.d.ts",
   "files": [
     "lib",
     "ol"
