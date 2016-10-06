@@ -1,2 +1,2 @@
-export declare const ol: any;
-export declare const olx: any;
+export declare const ol: Object;
+export declare const olx: Object;
