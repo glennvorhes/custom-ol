@@ -1,2 +1,2 @@
 export declare const ol: any;
-export default ol;
+export declare const olx: any;
