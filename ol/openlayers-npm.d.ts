@@ -4,12 +4,12 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // Definitions partially generated using tsd-jsdoc (https://github.com/englercj/tsd-jsdoc)
 
-export declare type GlobalObject = Object;
+export type GlobalObject = Object;
 
 /**
  * @namespace ol
  */
-export declare module ol {
+export module ol {
     /**
      * The animation static methods are designed to be used with the
      * {@link ol.Map#beforeRender} method.  For example:
@@ -11675,7 +11675,7 @@ export declare module ol {
 /**
  * @namespace olx
  */
-export declare module olx {
+export module olx {
 
     /**
      * @namespace olx.animation
