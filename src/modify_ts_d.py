@@ -60,8 +60,8 @@ for i in range(len(input_lines)):
     #
 
 
-    input_lines[i] = input_lines[i].replace('declare module ', 'export declare module ')
-    input_lines[i] = input_lines[i].replace('declare type ', 'export declare type ')
+    # input_lines[i] = input_lines[i].replace('declare module ', 'export declare module ')
+    # input_lines[i] = input_lines[i].replace('declare type ', 'export declare type ')
 
     for j in range(len(candidates)):
         if input_lines[i].find(candidates[j]):
