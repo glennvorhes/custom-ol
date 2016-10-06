@@ -4,9 +4,6 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // Definitions partially generated using tsd-jsdoc (https://github.com/englercj/tsd-jsdoc)
 
-require('./ol-build');
-
-
 export declare type GlobalObject = Object;
 
 /**
