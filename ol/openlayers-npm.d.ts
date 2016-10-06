@@ -10,54 +10,54 @@ export declare type GlobalObject = Object;
  * @namespace ol
  */
 export declare module ol {
-    /**
-     * The animation static methods are designed to be used with the
-     * {@link ol.Map#beforeRender} method.  For example:
-     *
-     *     var map = new ol.Map({ ... });
-     *     var zoom = ol.animation.zoom({
-     *       resolution: map.getView().getResolution()
-     *     });
-     *     map.beforeRender(zoom);
-     *     map.getView().setResolution(map.getView().getResolution() * 2);
-     *
-     * @namespace ol.animation
-     */
-    export module animation {
-        /**
-         * Generate an animated transition that will "bounce" the resolution as it
-         * approaches the final value.
-         * @param {olx.animation.BounceOptions} options Bounce options.
-         * @return {ol.PreRenderFunction} Pre-render function.
-         * @api
-         */
-        export function bounce(options: olx.animation.BounceOptions): ol.PreRenderFunction;
-
-        /**
-         * Generate an animated transition while updating the view center.
-         * @param {olx.animation.PanOptions} options Pan options.
-         * @return {ol.PreRenderFunction} Pre-render function.
-         * @api
-         */
-        export function pan(options: olx.animation.PanOptions): ol.PreRenderFunction;
-
-        /**
-         * Generate an animated transition while updating the view rotation.
-         * @param {olx.animation.RotateOptions} options Rotate options.
-         * @return {ol.PreRenderFunction} Pre-render function.
-         * @api
-         */
-        export function rotate(options: olx.animation.RotateOptions): ol.PreRenderFunction;
-
-        /**
-         * Generate an animated transition while updating the view resolution.
-         * @param {olx.animation.ZoomOptions} options Zoom options.
-         * @return {ol.PreRenderFunction} Pre-render function.
-         * @api
-         */
-        export function zoom(options: olx.animation.ZoomOptions): ol.PreRenderFunction;
-
-    }
+    // /**
+    //  * The animation static methods are designed to be used with the
+    //  * {@link ol.Map#beforeRender} method.  For example:
+    //  *
+    //  *     var map = new ol.Map({ ... });
+    //  *     var zoom = ol.animation.zoom({
+    //  *       resolution: map.getView().getResolution()
+    //  *     });
+    //  *     map.beforeRender(zoom);
+    //  *     map.getView().setResolution(map.getView().getResolution() * 2);
+    //  *
+    //  * @namespace ol.animation
+    //  */
+    // export module animation {
+    //     /**
+    //      * Generate an animated transition that will "bounce" the resolution as it
+    //      * approaches the final value.
+    //      * @param {olx.animation.BounceOptions} options Bounce options.
+    //      * @return {ol.PreRenderFunction} Pre-render function.
+    //      * @api
+    //      */
+    //     export function bounce(options: olx.animation.BounceOptions): ol.PreRenderFunction;
+    //
+    //     /**
+    //      * Generate an animated transition while updating the view center.
+    //      * @param {olx.animation.PanOptions} options Pan options.
+    //      * @return {ol.PreRenderFunction} Pre-render function.
+    //      * @api
+    //      */
+    //     export function pan(options: olx.animation.PanOptions): ol.PreRenderFunction;
+    //
+    //     /**
+    //      * Generate an animated transition while updating the view rotation.
+    //      * @param {olx.animation.RotateOptions} options Rotate options.
+    //      * @return {ol.PreRenderFunction} Pre-render function.
+    //      * @api
+    //      */
+    //     export function rotate(options: olx.animation.RotateOptions): ol.PreRenderFunction;
+    //
+    //     /**
+    //      * Generate an animated transition while updating the view resolution.
+    //      * @param {olx.animation.ZoomOptions} options Zoom options.
+    //      * @return {ol.PreRenderFunction} Pre-render function.
+    //      * @api
+    //      */
+    //     export function zoom(options: olx.animation.ZoomOptions): ol.PreRenderFunction;
+    //
+    // }
 
     /**
       * Error object thrown when an assertion failed. This is an ECMA-262 Error,
