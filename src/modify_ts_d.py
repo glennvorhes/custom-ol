@@ -67,10 +67,6 @@ for i in range(len(input_lines)):
         if input_lines[i].find(candidates[j]):
             input_lines[i] = input_lines[i].replace(candidates[j], candidates_replace[j])
 
-    input_lines[i] = input_lines[i].replace('declare ', '')
-
-
-
 
 
         #
