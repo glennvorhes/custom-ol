@@ -11675,12 +11675,12 @@ export declare module ol {
 /**
  * @namespace olx
  */
-declare module olx {
+declare namespace olx {
 
     /**
      * @namespace olx.animation
      */
-    module animation {
+    namespace animation {
         /**
          * @typedef {{resolution: number,
          *     start: (number|undefined),
@@ -11744,7 +11744,7 @@ declare module olx {
     /**
      * @namespace olx.control
      */
-    module control {
+    namespace control {
         /**
          * @typedef {{className: (string|undefined),
          *     collapsible: (boolean|undefined),
@@ -11956,7 +11956,7 @@ declare module olx {
     /**
      * @namespace olx.format
      */
-    module format {
+    namespace format {
         /**
          * @typedef {{dataProjection: ol.ProjectionLike,
          *     featureProjection: ol.ProjectionLike,
@@ -12177,7 +12177,7 @@ declare module olx {
     /**
      * @namespace olx.interaction
      */
-    module interaction {
+    namespace interaction {
         /**
          * Object literal with config options for interactions.
          * @typedef {{handleEvent: function(ol.MapBrowserEvent):boolean}}
@@ -12474,7 +12474,7 @@ declare module olx {
     /**
      * @namespace olx.layer
      */
-    module layer {
+    namespace layer {
         /**
          * @typedef {{opacity: (number|undefined),
          *     visible: (boolean|undefined),
@@ -12671,13 +12671,13 @@ declare module olx {
     /**
      * @namespace olx.parser
      */
-    module parser {
+    namespace parser {
     }
 
     /**
      * @namespace olx.render
      */
-    module render {
+    namespace render {
         /**
          * @typedef {{size: (ol.Size|undefined),
          *     pixelRatio: (number|undefined)}}
@@ -12693,7 +12693,7 @@ declare module olx {
     /**
      * @namespace olx.source
      */
-    module source {
+    namespace source {
         /**
          * @typedef {{cacheSize: (number|undefined),
          *     culture: (string|undefined),
@@ -13323,7 +13323,7 @@ declare module olx {
     /**
      * @namespace olx.style
      */
-    module style {
+    namespace style {
         /**
          * @typedef {{fill: (ol.style.Fill|undefined),
          *     radius: number,
@@ -13494,7 +13494,7 @@ declare module olx {
     /**
      * @namespace olx.tilegrid
      */
-    module tilegrid {
+    namespace tilegrid {
         /**
          * @typedef {{extent: (ol.Extent|undefined),
          *     minZoom: (number|undefined),
@@ -13687,7 +13687,7 @@ declare module olx {
         getPointResolution?: ((resolution: number, coords: ol.Coordinate) => number);
     }
 
-    module view {
+    namespace view {
         /**
          * @typedef {{
          *     padding: (!Array.<number>|undefined),
