@@ -10,7 +10,7 @@ openlayers_types = os.path.join(
 
 output_file = os.path.join(
     os.path.dirname(__file__), os.pardir,
-    'ol', 'ol-npm.d.ts')
+    'ol', 'ol-build.d.ts')
 
 input_lines = []
 """
@@ -73,6 +73,8 @@ for i in range(len(input_lines)):
     # input_lines[i] = input_lines[i].replace('export module', 'export namespace')
 
     pass
+
+# input_lines.append('export default ol;\n')
 
 
 with open(output_file, 'w') as out_file:

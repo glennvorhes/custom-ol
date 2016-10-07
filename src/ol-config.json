@@ -134,6 +134,5 @@
     "compilation_level": "ADVANCED_OPTIMIZATIONS",
     "use_types_for_optimization": true,
     "manage_closure_dependencies": true
-  },
-  "umd": true
+  }
 }

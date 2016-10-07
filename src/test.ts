@@ -2,6 +2,7 @@
 
 export declare type GlobalObject = Object;
 
+
 export module ol {
 
         /**
@@ -30,11 +31,10 @@ export module ol {
 
     module control {
     }
-
-
 }
 
-export module olx {
+
+export namespace olx {
 
     export module animation {
         export interface BounceOptions {
@@ -45,5 +45,8 @@ export module olx {
         }
 
     }
-
 }
+
+export default ol;
+
+
