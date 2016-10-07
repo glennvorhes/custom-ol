@@ -13,6 +13,7 @@
     "./src/index.ts",
     "./src/ol-mod.ts",
     "./src/olx.ts",
+    "./src/olx1.ts",
     "./src/test.ts"
   ],
   "exclude": [
