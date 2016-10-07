@@ -74,7 +74,7 @@ for i in range(len(input_lines)):
 
     pass
 
-# input_lines.append('export default ol;\n')
+input_lines.append('export default ol;\n')
 
 
 with open(output_file, 'w') as out_file:
