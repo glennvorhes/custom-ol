@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ol-build": "node node_modules/openlayers/tasks/build.js src/ol-config.json ol/ol-build.js",
+    "ol-build": "node ./node_modules/openlayers/tasks/build.js ./src/ol-config.json ./ol/ol-build.js",
     "tsc": "tsc -w",
     "update-types": "C:\\Python33\\python.exe src\\modify_ts_d.py"
   },
