@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/glennvorhes/custom-ol#readme",
   "devDependencies": {
-    "@types/node": "^6.0.42",
     "openlayers": "^3.18.2",
     "source-map-loader": "^0.1.5"
   }
