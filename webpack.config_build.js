@@ -4,14 +4,12 @@
 "use strict";
 const path = require('path');
 
-
-
 module.exports = {
     entry: './lib/index.js',
     devtool: 'source-map',
     output: {
         path: path.join(__dirname, 'lib'),
-        filename: "build.js"
+        filename: "custom-ol-build.js"
     },
     module: {
         loaders: [
