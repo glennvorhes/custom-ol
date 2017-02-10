@@ -3,7 +3,7 @@
  */
 // import {ol} from './index';
 
-import ol from './index';
+import  ol from './index';
 console.log(ol);
 
 console.log('here');

@@ -2,7 +2,7 @@
   "name": "custom-ol",
   "version": "1.0.0",
   "description": "smaller custom openlayers build",
-  "main": "./ol/ol-build.js",
+  "main": "./lib/index.js",
   "typings": "./ol/ol-build.d.ts",
   "files": [
     "lib",
