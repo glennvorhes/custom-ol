@@ -1,2 +1,3 @@
-import * as ol from '../ol/ol-build';
-export default ol;
+import * as _ol from '../ol/ol-build';
+export declare const ol: typeof _ol.ol;
+export default _ol;

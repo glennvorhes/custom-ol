@@ -1,4 +1,4 @@
-import * as ol from '../ol/ol-build';
+import * as _ol from '../ol/ol-build';
 // export const ol = _ol;
 // export default ol;
 // console.log(ol);
@@ -21,11 +21,13 @@ import * as ol from '../ol/ol-build';
 // }
 
 
-console.log(ol);
-window['ol'] = ol['ol'];
+console.log(_ol);
+window['ol'] = _ol['ol'];
+
+export const ol = _ol['ol'];
 
 
-export default ol;
+export default _ol;
 
 // namespace ol{
 //     export * from '../ol/ol-build'
