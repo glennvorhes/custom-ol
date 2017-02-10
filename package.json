@@ -2,7 +2,7 @@
   "name": "custom-ol",
   "version": "1.0.0",
   "description": "smaller custom openlayers build",
-  "main": "./lib/index.js",
+  "main": "./lib/build.js",
   "typings": "./ol/ol-build.d.ts",
   "files": [
     "lib",
@@ -15,6 +15,7 @@
     "tsc": "tsc -w",
     "update-types": "C:\\Python33\\python.exe src\\modify_ts_d.py",
     "webpack": "webpack -d -w",
+    "webpack-build": "webpack --config webpack.config2.js -d -w",
     "serve-test": "python -m http.server 5003"
   },
   "repository": {

@@ -3,9 +3,11 @@ import * as _ol from '../ol/ol-build';
 // export default ol;
 // console.log(ol);
 
-export const ol = _ol['ol'];
+// export const ol = _ol['ol'];
 
 // console.log(_ol['ol']);
+
+
 
 
 // const ol2 = {};
