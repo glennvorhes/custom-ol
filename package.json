@@ -15,7 +15,7 @@
     "tsc": "tsc -w",
     "update-types": "C:\\Python33\\python.exe src\\modify_ts_d.py",
     "webpack": "webpack -d -w",
-    "webpack-build": "webpack --config webpack.config_build.js -p -w",
+    "webpack-build": "webpack --config webpack.config_build.js -w",
     "serve-test": "python -m http.server 5003"
   },
   "repository": {
