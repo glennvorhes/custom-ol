@@ -13879,6 +13879,6 @@ declare module olx {
 
 }
 
-declare module "openlayers" {
+declare module "custom-ol" {
     export = ol;
 }
