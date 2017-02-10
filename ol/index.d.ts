@@ -13882,3 +13882,5 @@ declare module olx {
 declare module "custom-ol" {
     export = ol;
 }
+
+export default ol;
