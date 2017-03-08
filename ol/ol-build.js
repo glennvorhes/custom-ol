@@ -588,3 +588,4 @@ t("ol.animation.pan",function(a){console.warn("ol.animation.pan() is deprecated.
 t("ol.control.FullScreen",Jd);t("ol.easing.inAndOut",bb);
   return OPENLAYERS.ol;
 }));
+

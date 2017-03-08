@@ -1,4 +1,3 @@
-"use strict";
 // const path = require('path');
 // const fs = require('fs');
 //
@@ -17,7 +16,7 @@
 // }
 
 module.exports = {
-    entry: "js/test.js",
+    entry: "./js/test.js",
     devtool: 'source-map',
     output: {
         path: "build",
