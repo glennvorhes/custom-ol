@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "custom-ol": "github:glennvorhes/custom-ol"
+    "custom-ol": "github:glennvorhes/custom-ol#test-web-integration"
   }
 }
