@@ -47,13 +47,20 @@
   \********************/
 /***/ function(module, exports, __webpack_require__) {
 
+	"use strict";
+	// import ol = require("custom-ol");
+	var ol = __webpack_require__(/*! custom-ol */ 1);
 	/**
 	 * Created by glenn on 3/7/2017.
 	 */
-	"use strict";
 	// import * as ol from 'custom-ol';
-	var ol = __webpack_require__(/*! custom-ol */ 1);
+	//
+	// import ol = require('custom-ol');
+	//
+	// ol
+	//
 	console.log(ol.Map);
+	console.log('here');
 	console.log('here');
 	console.log('here');
 

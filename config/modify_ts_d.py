@@ -22,7 +22,7 @@ for f in file_lines:
 
 out_lines.append("export = ol;")
 
-with open(os.path.join(os.path.dirname(__file__), "lib", "index.d.ts"), "w", encoding="UTF-8") as f:
+with open(os.path.join(os.path.dirname(__file__), os.pardir, "lib", "index.d.ts"), "w", encoding="UTF-8") as f:
     f.write('\n'.join(out_lines))
 
 

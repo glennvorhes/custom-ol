@@ -8,14 +8,10 @@
     "lib"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "ol-build": "node ./node_modules/openlayers/tasks/build.js ./src/ol-config.json ./lib/index.js",
-    "tsc": "tsc -w",
-    "update-types": "C:\\Python34\\python.exe modify_ts_d.py",
-    "webpack-build": "webpack --config webpack.config_build.js -w",
-    "serve-test": "python -m http.server 5003",
+    "ol-build": "node ./node_modules/openlayers/tasks/build.js ./config/ol-config.json ./lib/index.js",
+    "ol-update-types": "C:\\Python34\\python.exe config\\modify_ts_d.py",
     "test-tsc": "cd test & tsc -w",
-    "test-update": "cd test & npm update custom-ol & COPY /y node_modules\\custom-ol\\ol\\ol-build.js js\\",
+    "test-update": "cd test & npm update custom-ol & COPY /y node_modules\\custom-ol\\lib\\index.js js\\ol.js",
     "test-webpack": "cd test & webpack -d -w",
     "test-serve": "cd test & python -m http.server 5003"
   },
@@ -30,8 +26,6 @@
   },
   "homepage": "https://github.com/glennvorhes/custom-ol#readme",
   "devDependencies": {
-    "@types/node": "^7.0.5",
-    "openlayers": "^3.18.2",
-    "source-map-loader": "^0.1.6"
+    "openlayers": "^3.18.2"
   }
 }
