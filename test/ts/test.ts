@@ -5,6 +5,8 @@
 import * as ol from 'custom-ol';
 
 
+
+
 console.log(ol.Map);
 console.log('here');
 console.log('here');
