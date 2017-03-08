@@ -7387,7 +7387,7 @@ declare module ol {
      * `'top-center'`, `'top-right'`
      * @enum {string}
      */
-    type OverlayPositioning = "bottom-left" | "bottom-center" | "bottom-right" | "center-left" | "center-center" | "center-right" | "top-left" | "top-center" | "top-right";
+    type OverlayPositioning = "bottom-left" | "bottom-center" | "bottom-right" | "center-left" | "center-center" | "center-right" | "top-left" | "top-center" | "top-right"; 
 
     /**
      * @classdesc
@@ -10563,7 +10563,7 @@ declare module ol {
              * @api
              */
             setGeometry(geometry: (string | ol.geom.Geometry | ol.StyleGeometryFunction)): void;
-
+            
             /**
              * Set the image style.
              * @param {ol.style.Image} image Image style.
@@ -10577,7 +10577,7 @@ declare module ol {
              * @api
              */
             setStroke(stroke: ol.style.Stroke): void;
-
+            
             /**
              * Set the text style.
              * @param {ol.style.Text} text Text style.
@@ -11729,7 +11729,7 @@ declare module ol {
         /**
          * Animate the view. The view's center, zoom (or resolution), and
          * rotation can be animated for smooth transitions between view states.
-         * @param {olx.AnimateOptions} var_args Animation options.
+         * @param {olx.AnimateOptions} var_args Animation options. 
          * @param {olx.AnimateOptions | (completed: boolean) => void } restArgs
          * @api experimental
          */
@@ -13823,7 +13823,7 @@ declare module olx {
         zoom?: number;
         zoomFactor?: number;
     }
-
+		
     /**
     * Object literal with options for the {@link ol.Map#forEachFeatureAtPixel} and
     * {@link ol.Map#hasFeatureAtPixel} methods.
@@ -13879,8 +13879,4 @@ declare module olx {
 
 }
 
-declare module "custom-ol" {
-    export = ol;
-}
-
-// export default ol;
+export = ol;

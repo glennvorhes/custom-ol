@@ -6,8 +6,24 @@ import os
 
 r = requests.get("https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/openlayers/index.d.ts")
 
-with open(os.path.join(os.path.dirname(__file__), os.pardir, "tmp", "index.d.ts"), "w", encoding="UTF-8") as f:
-    f.write(r.text)
+file_text = r.text
+
+file_lines = file_text.split('\n')
+out_lines = []
+
+for f in file_lines:
+    if f.find('declare module "openlayers"') > -1:
+        break
+
+    # if f.find('declare module ') > -1:
+    #     f = "export " + f
+
+    out_lines.append(f)
+
+out_lines.append("export = ol;")
+
+with open(os.path.join(os.path.dirname(__file__), "lib", "index.d.ts"), "w", encoding="UTF-8") as f:
+    f.write('\n'.join(out_lines))
 
 
 # print(r.text)
@@ -22,7 +38,7 @@ with open(os.path.join(os.path.dirname(__file__), os.pardir, "tmp", "index.d.ts"
 #
 # output_file = os.path.join(
 #     os.path.dirname(__file__), os.pardir,
-#     'ol', 'ol-build.d.ts')
+#     'ol', 'openlayers.d.ts')
 #
 # input_lines = []
 # """

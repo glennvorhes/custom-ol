@@ -2,19 +2,16 @@
   "name": "custom-ol",
   "version": "1.0.0",
   "description": "smaller custom openlayers build",
-  "main": "./lib/ol-build.js",
-  "typings": "./tmp/index.d.ts",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
   "files": [
-    "lib",
-    "ol",
-    "src",
-    "tmp"
+    "lib"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ol-build": "node ./node_modules/openlayers/tasks/build.js ./src/ol-config.json ./ol/ol-build.js",
+    "ol-build": "node ./node_modules/openlayers/tasks/build.js ./src/ol-config.json ./lib/index.js",
     "tsc": "tsc -w",
-    "update-types": "C:\\Python33\\python.exe src\\modify_ts_d.py",
+    "update-types": "C:\\Python34\\python.exe modify_ts_d.py",
     "webpack-build": "webpack --config webpack.config_build.js -w",
     "serve-test": "python -m http.server 5003",
     "test-tsc": "cd test & tsc -w",
@@ -33,6 +30,7 @@
   },
   "homepage": "https://github.com/glennvorhes/custom-ol#readme",
   "devDependencies": {
+    "@types/node": "^7.0.5",
     "openlayers": "^3.18.2",
     "source-map-loader": "^0.1.6"
   }
