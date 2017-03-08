@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "update": "npm update custom-ol & COPY /y node_modules\\custom-ol\\lib\\index.js build\\ol.js",
+    "webpack-extern": "webpack --config webpack-extern.config.js -d -w",
+    "webpack-combine": "webpack --config webpack-combine.config.js -d -w",
+    "serve": "python -m http.server 5003"
   },
   "author": "",
   "license": "ISC",

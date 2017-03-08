@@ -20,11 +20,11 @@ module.exports = {
     devtool: 'source-map',
     output: {
         path: "build",
-        filename: "build.js"
+        filename: "build-extern.js"
     },
     module: {
         loaders: [
-            {test: /\.js$/, loader: "source-map-loader"}
+            // {test: /\.js$/, loader: "source-map-loader"}
         ]
     },
     externals: {

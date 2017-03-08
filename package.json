@@ -9,11 +9,7 @@
   ],
   "scripts": {
     "ol-build": "node ./node_modules/openlayers/tasks/build.js ./config/ol-config.json ./lib/index.js",
-    "ol-update-types": "C:\\Python34\\python.exe config\\modify_ts_d.py",
-    "test-tsc": "cd test & tsc -w",
-    "test-update": "cd test & npm update custom-ol & COPY /y node_modules\\custom-ol\\lib\\index.js js\\ol.js",
-    "test-webpack": "cd test & webpack -d -w",
-    "test-serve": "cd test & python -m http.server 5003"
+    "ol-update-types": "C:\\Python34\\python.exe config\\modify_ts_d.py"
   },
   "repository": {
     "type": "git",
