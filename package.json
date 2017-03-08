@@ -15,7 +15,9 @@
     "tsc": "tsc -w",
     "update-types": "C:\\Python33\\python.exe src\\modify_ts_d.py",
     "webpack-build": "webpack --config webpack.config_build.js -w",
-    "serve-test": "python -m http.server 5003"
+    "serve-test": "python -m http.server 5003",
+    "test-tsc": "cd test & tsc -w",
+    "test-update": "cd test & npm update custom-ol & COPY /y node_modules\\custom-ol\\ol\\ol-build.js js\\"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,17 @@
+{
+  "version": "2.0.3",
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "js/",
+    "target": "es5",
+    "declaration": true,
+    "sourceMap": true
+  },
+  "files": [
+    "./ts/test.ts"
+  ],
+  "exclude": [
+    "node_modules", "DefinitelyTyped"
+  ],
+  "compileOnSave": true
+}
