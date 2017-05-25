@@ -23,6 +23,7 @@
     "ol.View#calculateExtent",
     "ol.View#getProjection",
     "ol.View#fit",
+    "ol.View#animate",
     "ol.control.defaults",
     "ol.layer.Tile",
     "ol.layer.Tile#getVisible",
