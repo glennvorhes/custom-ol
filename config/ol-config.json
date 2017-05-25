@@ -68,7 +68,6 @@
     "ol.Map#forEachFeatureAtPixel",
     "ol.Map#addInteraction",
     "ol.Map#removeInteraction",
-    "ol.Map#beforeRender",
     "ol.Map#addControl",
     "ol.Map#once",
     "ol.Map#renderSync",
@@ -105,7 +104,6 @@
     "ol.proj.Projection#getCode",
     "ol.interaction.Draw",
     "ol.interaction.Draw#on",
-    "ol.animation.pan",
     "ol.control.FullScreen",
     "ol.easing.inAndOut"
   ],

@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/glennvorhes/custom-ol#readme",
   "devDependencies": {
-    "openlayers": "^3.18.2"
+    "@mapbox/point-geometry": "github:mapbox/point-geometry",
+    "@mapbox/vector-tile": "github:mapbox/vector-tile",
+    "openlayers": "^4.1.1"
   }
 }

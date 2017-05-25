@@ -4,7 +4,8 @@ helper to change ambient reference to d.ts that describes the custom ol package
 import requests
 import os
 
-r = requests.get("https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/openlayers/index.d.ts")
+r = requests.get("https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/openlayers/index.d.ts")
+
 
 file_text = r.text
 
