@@ -66,6 +66,7 @@
     "ol.Map#getSize",
     "ol.Map#updateSize",
     "ol.Map#forEachFeatureAtPixel",
+    "ol.Map#forEachLayerAtPixel",
     "ol.Map#addInteraction",
     "ol.Map#removeInteraction",
     "ol.Map#addControl",
