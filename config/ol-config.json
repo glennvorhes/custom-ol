@@ -90,6 +90,7 @@
     "ol.Feature#getProperties",
     "ol.Feature#setProperties",
     "ol.Feature#getGeometry",
+    "ol.Feature#setGeometry",
     "ol.geom.Point",
     "ol.geom.Point#transform",
     "ol.geom.Point#getCoordinates",
