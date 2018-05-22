@@ -71,6 +71,7 @@
     "ol.Map#removeInteraction",
     "ol.Map#addControl",
     "ol.Map#once",
+    "ol.Map#un",
     "ol.Map#renderSync",
     "ol.source.Vector",
     "ol.source.Vector#getFeatures",
