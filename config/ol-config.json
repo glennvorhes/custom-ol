@@ -102,6 +102,7 @@
     "ol.geom.LineString",
     "ol.geom.LineString#getCoordinates",
     "ol.geom.LineString#getExtent",
+    "ol.geom.MultiLineString#getExtent",
     "ol.geom.LineString#transform",
     "ol.proj.Projection",
     "ol.proj.Projection#getCode",
