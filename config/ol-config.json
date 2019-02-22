@@ -84,6 +84,7 @@
     "ol.source.Vector#refresh",
     "ol.source.TileArcGISRest",
     "ol.source.TileArcGISRest#refresh",
+    "ol.source.Cluster",
     "ol.Overlay",
     "ol.Overlay#setPosition",
     "ol.Feature",
